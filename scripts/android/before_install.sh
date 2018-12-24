@@ -17,5 +17,5 @@ docker run -v $PWD:/android/subsurface \
 	   -v $PARENT/subsurface-mobile-build-arm:/android/subsurface-mobile-build-arm \
 	   --name=builder \
 	   -w /android \
-	   -d dirkhh/android-builder:5.11.03 \
+	   -d dirkhh/android-builder:5.12.01 \
 	   /bin/sleep 60m
