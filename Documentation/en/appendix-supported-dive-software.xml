@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<appendix xml:id="appendix-supported-dive-software" xreflabel="Supported Dive Software" xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Supported Dive Software</title>
+    <para>Subsurface can also read the XML files that can be exported by:</para>
+    <simplelist>
+        <member><link xlink:href="https://divinglog.de/">Divinglog</link></member>
+        <member><link xlink:href="http://jdivelog.org/about/">JDivelog</link></member>
+        <member><link xlink:href="http://www.mac-dive.com/">MacDive</link></member>
+        <member><link xlink:href="https://en.divelogs.de/">divelogs.de</link></member>
+        <member>Suunto Dive Manager 3 and 4</member>
+    </simplelist>
+</appendix>
+

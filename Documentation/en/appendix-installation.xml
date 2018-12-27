@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Installation</title>
+    <para>Executable installation programs and source archives of the lastest version are available
+        from the <link xlink:href="https://subsurface-divelog.org/download/">Project
+            Downloads</link> page.</para>
+    <important>
+        <para>Install of software on a computer may require administrative priviledges.</para>
+    </important>
+    <sect1>
+        <title>Supported Operating Systems</title>
+        <para>The latest version has been tested on the following operating systems and
+            versions.</para>
+        <variablelist>
+            <title>Supported Operating Systems</title>
+            <varlistentry>
+                <term>Windows (32 - 64 bit)</term>
+                <listitem>
+                    <para>Windows 7, Windows 8 and Windows 10.</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>MacOS (64bit Intel)</term>
+                <listitem>
+                    <para>MacOS 10.10 or later</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Ubuntu Linux</term>
+                <listitem>
+                    <para>Xenial 16.04, Bionic 18.04</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Debian Linux</term>
+                <listitem>
+                    <para>Debian Stretch</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Linux Mint</term>
+                <listitem>
+                    <para>Linux Mint 18</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Fedora</term>
+                <listitem>
+                    <para>???</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>OpenSUSE</term>
+                <listitem>
+                    <para>???</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Android</term>
+                <listitem>
+                    <para>Android 5.0 Lollipop, Android 6.0 Marshmallow</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>iOS</term>
+                <listitem>
+                    <para>iOS 10, iOS 11, iOS 12</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </sect1>
+    <sect1>
+        <title>Installation on Windows</title>
+        <para>Use the Windows installer to install. During installation the <guimenuitem>Start Menu
+                Folder</guimenuitem> is created and a shortcuts are added to the folder which
+            enabled starting and to uninstalling of the program.</para>
+        <procedure>
+            <title>To install on Windows:</title>
+            <step>
+                <para><link
+                        xlink:href="https://subsurface-divelog.org/download/subsurface-&productversion;.exe"
+                        >Download the installer</link>.</para>
+            </step>
+            <step>
+                <para>Execute the installer.</para>
+            </step>
+            <step>
+                <para>Click <guibutton>Yes</guibutton> to allow the installation.</para>
+            </step>
+            <step>
+                <para>Accept the software license.</para>
+            </step>
+            <step>
+                <para>Choose the install path (default should be reasonable in most cases).</para>
+            </step>
+        </procedure>
+    </sect1>
+    <sect1>
+        <title>Installation on MacOS</title>
+        <procedure>
+            <title>To install on MacOS:</title>
+            <step>
+                <para><link
+                        xlink:href="https://subsurface-divelog.org/download/Subsurface-&productversion;.dmg"
+                        >Download the installer</link>.</para>
+            </step>
+            <step>
+                <para>Execute the installer.</para>
+            </step>
+            <step>
+                <para>Locate the <application>Subsurface.app</application> file in the
+                        <guilabel>Finder Sidebar</guilabel>.</para>
+            </step>
+            <step>
+                <para>Drag the application into the <filename class="directory"
+                        >/Applications</filename> folder to install.</para>
+            </step>
+        </procedure>
+    </sect1>
+    <sect1>
+        <title>Installation on Linux</title>
+        <para>The project makes dedicated binaries available for a number of Linux flavours as well
+            as a generic <application>AppImage</application> that should work on most any Linux
+            distributions.</para>
+        <sect2>
+            <title>Installation on DEB-based Systems</title>
+            <para>The project maintains a Personal Package Archive (<acronym>PPA</acronym>)
+                repository.</para>
+            <para><command>ppa:subsurface/subsurface</command></para>
+            <procedure>
+                <title>To install on DEB-based systems:</title>
+                <step>
+                    <para>Add the repository.</para>
+                    <para><command>sudo apt-add-repository
+                        ppa:subsurface/subsurface</command></para>
+                </step>
+                <step>
+                    <para>Update the software list.</para>
+                    <para><command>sudo apt-get update</command></para>
+                </step>
+                <step>
+                    <para>Install the program.</para>
+                    <para><command>sudo apt-get install subsurface</command></para>
+                </step>
+            </procedure>
+            <important>
+                <para>Make sure you are getting a current version with all its Qt5
+                    dependencies.</para>
+            </important>
+            <procedure>
+                <title>To install on older DEB-based systems:</title>
+                <para>Installation on older DEB-based systems is possible but required changing the
+                    release name of the distribution.</para>
+                <step>
+                    <para>Add the repository.</para>
+                    <para><command>sudo apt-add-repository
+                        ppa:subsurface/subsurface</command></para>
+                </step>
+                <step>
+                    <para>Update the software list.</para>
+                    <para><command>sudo apt-get update</command></para>
+                </step>
+                <step>
+                    <para>Install the program.</para>
+                    <para><command>sudo apt-get install subsurface</command></para>
+                </step>
+            </procedure>
+        </sect2>
+        <sect2>
+            <title>Installation on RPM-based Systems</title>
+            <para>The project maintains a build service project page from which it is possible to download and
+                install.</para>
+            <procedure>
+                <title>To install on RPM-based systems:</title>
+                <step>
+                    <para>Click Here to display the build service project page.</para>
+                </step>
+                <step>
+                    <para>Click <guibutton>Cancel</guibutton> to by-pass the <guilabel>Search
+                            settings</guilabel> dialog.</para>
+                </step>
+                <step>
+                    <para>Select your Operating System.</para>
+                </step>
+                <step>
+                    <para>Choose your installation method:</para>
+                    <simplelist>
+                        <member>Add a repository and install manually.</member>
+                        <member>Grab binary packages directly.</member>
+                    </simplelist>
+                </step>
+            </procedure>
+        </sect2>
+        <sect2>
+            <title>Installation on other 64bit Linux Systems</title>
+
+        </sect2>
+        <sect2>
+            <title>Installation on Android Devices</title>
+            
+        </sect2>
+        <sect2>
+            <title>Installation on iOS Devices</title>
+            
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Building from Sources</title>
+    </sect1>
+</appendix>

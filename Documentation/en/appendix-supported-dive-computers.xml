@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<appendix xml:id="appendix-supported-dive-computers" xreflabel="Supported Dive Computers" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
+    <title>Supported Dive Computers</title>
+    <variablelist>
+        <varlistentry>
+            <term>Aeris</term>
+            <listitem>
+                <para>500 AI, A300, A300 AI, A300CS, Atmos 2, Atmos AI, Atmos AI 2, Compumask,
+                    Elite, Elite T3, Epic, F10, F11, Manta, XR-1 NX, XR-2</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Apeks</term>
+            <listitem>
+                <para>Quantum X</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Atomic Aquatics</term>
+            <listitem>
+                <para>Cobalt, Cobalt 2</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Beuchat</term>
+            <listitem>
+                <para>Mundial 2, Mundial 3, Voyager 2G</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Citizen</term>
+            <listitem>
+                <para>Hyper Aqualand</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Cochran</term>
+            <listitem>
+                <para>Commander, EMC-14, EMC-16, EMC-20H</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Cressi</term>
+            <listitem>
+                <para>Drake, Edy, Giotto, Leonardo, Newton</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Dive Rite</term>
+            <listitem>
+                <para>NiTek Q, NiTek Trio</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Divesoft</term>
+            <listitem>
+                <para>Freedom</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>DiveSystem</term>
+            <listitem>
+                <para>Orca, iDive DAN, iDive Deep, iDive Easy, iDive Free, iDive Pro, iDive Reb,
+                    iDive Stealth, iDive Tech, iDive X3M, iX3M Deep, iX3M Easy, iX3M Reb, iX3M
+                    Tec</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Genesis</term>
+            <listitem>
+                <para>React Pro, React Pro White</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Heinrichs Weikamp</term>
+            <listitem>
+                <para>Frog, OSTC, OSTC 2, OSTC 2C, OSTC 2N, OSTC 3, OSTC 3+, OSTC 4, OSTC Mk2, OSTC
+                    Sport, OSTC cR</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Hollis</term>
+            <listitem>
+                <para>DG02, DG03, TX1</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Mares</term>
+            <listitem>
+                <para>Airlab, Darwin, Darwin Air, Icon HD, Icon HD Net Ready, M1, M2, Matrix, Nemo,
+                    Nemo Air, Nemo Apneist, Nemo Excel, Nemo Steel, Nemo Titanium, Nemo Wide, Nemo
+                    Wide 2, Puck, Puck 2, Puck Air, Puck Pro, Smart, Smart Apnea</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Oceanic</term>
+            <listitem>
+                <para>Atom 1.0, Atom 2.0, Atom 3.0, Atom 3.1, Datamask, F10, F11, Geo, Geo 2.0, OC1,
+                    OCS, OCi, Pro Plus 2, Pro Plus 2.1, Pro Plus 3, VT 4.1, VT Pro, VT3, VT4, VTX,
+                    Veo 1.0, Veo 180, Veo 2.0, Veo 200, Veo 250, Veo 3.0, Versa Pro</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Reefnet</term>
+            <listitem>
+                <para>Sensus, Sensus Pro, Sensus Ultra</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Scubapro</term>
+            <listitem>
+                <para>Chromis, Mantis, Mantis 2, Meridian, XTender 5</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Seabaer</term>
+            <listitem>
+                <para>T1, H3, HUDC</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Seemann</term>
+            <listitem>
+                <para>XP5</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Shearwater</term>
+            <listitem>
+                <para>Nerd, Perdix, Petrel, Petrel 2, Predator</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Sherwood</term>
+            <listitem>
+                <para>Amphos, Amphos Air, Insight, Insight 2, Vision, Wisdom, Wisdom 2, Wisdom
+                    3</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Subgear</term>
+            <listitem>
+                <para>XP Air, XP-10, XP-3G, XP-Air</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Suunto</term>
+            <listitem>
+                <para>Cobra, Cobra 2, Cobra 3, D3, D4, D4i, D6, D6i, D9, D9tx, DX, EON Steel, Eon,
+                    Gekko, HelO2, Mosquito, Solution, Solution Alpha, Solution Nitrox, Spyder,
+                    Stinger, Vyper, Vyper 2, Vyper Air, Vyper Novo, Vytec, Zoop, Zoop Novo</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Tusa</term>
+            <listitem>
+                <para>Element II (IQ-750), IQ-700, Zen (IQ-900), Zen Air (IQ-950)</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Uemis</term>
+            <listitem>
+                <para>Zürich SDA</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Uwatec</term>
+            <listitem>
+                <para>Aladin 2G, Aladin Air Twin, Aladin Air Z, Aladin Air Z Nitrox, Aladin Air Z
+                    O2, Aladin Prime, Aladin Pro, Aladin Pro Ultra, Aladin Sport, Aladin Sport Plus,
+                    Aladin Tec, Aladin Tec 2G, Aladin Tec 3G, Galileo Luna, Galileo Sol, Galileo
+                    Terra, Galileo Trimix, Memomouse, Smart Com, Smart Pro, Smart Tec, Smart
+                    Z</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Zeagle</term>
+            <listitem>
+                <para>N2iTiON3</para>
+            </listitem>
+        </varlistentry>
+    </variablelist>
+</appendix>

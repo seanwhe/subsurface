@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbookxi.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <preface>
+        <info>
+            <title>&product; User Manual</title>
+            <productname>&product;</productname>
+            <productnumber>&productversion;</productnumber>
+            <pubdate>September 2018</pubdate>
+            <abstract>
+                <title>About &product;</title>
+                <para>&product; is an open source divelog program for recreational, technical and
+                    free divers that runs on Windows, Mac, Linux, Android and IOS.</para>
+                <para>&product; enables the download or import of dive logs from a variety of dive
+                    computers, dive log programs and dive log websites. &product; also supports
+                    import using files formatted using comma-separated values
+                        (<acronym>CSV</acronym>) and the ability to manually create and save dive
+                    logs directly.</para>
+                <para>&product; provides a visual dive planner module that makes dive planning easy
+                    and intuitive using a choice of Bühlmann ZH16 or Varying Permeability Model
+                        (<acronym>VPM-B</acronym>) decompression algorithms.</para>
+                <para>&product; offers both local and cloud storage options. Using the &product;
+                    cloud storage option, makes it it possible for you to access your dive log data
+                    from different computers and mobile devices in both online and offline
+                    modes.</para>
+            </abstract>
+            <abstract>
+                <title>A Bit of History</title>
+                <para>In fall of 2011, when a forced lull in kernel development gave him a chance to
+                    start a new project, Linux creator Linus Torvalds decided to tackle his
+                    frustration with the lack of decent divelog software on Linux.</para>
+                <para>Linus worked with a team of developers, and &product; is the result. It now
+                    supports Linux, Windows and MacOS and allows data import from many dive
+                    computers and several existing divelog programs.</para>
+                <para>&product; provides a quick and easy way to see the key information provided by
+                    a modern dive computer and lets users track a wide variety of data about their
+                    dives. In fall of 2012 Dirk Hohndel took over as Subsurface maintainer.</para>
+            </abstract>
+            <legalnotice>
+                <title>Software License</title>
+                <para>&product; software is released under the <link
+                        xlink:href="https://www.gnu.org/licenses/gpl-2.0.en.html">GNU GENERAL PUBLIC
+                        LICENSE</link>.</para>
+            </legalnotice>
+            <legalnotice>
+                <title>Documentation License</title>
+                <para>&product; documetation is released under <link
+                        xlink:href="GNU Free Documentation License"
+                        >https://tdg.docbook.org/tdg/5.0/gfdl.html</link>.</para>
+            </legalnotice>
+            <authorgroup>
+                <author>
+                    <personname>Jacco van Koll</personname>
+                </author>
+                <author>
+                    <personname>Dirk Hohndel</personname>
+                </author>
+                <author>
+                    <personname>Reinout Hoornweg</personname>
+                </author>
+                <author>
+                    <personname>Linus Torvalds</personname>
+                </author>
+                <author>
+                    <personname>Miika Turkia</personname>
+                </author>
+                <author>
+                    <personname>Amit Chaudhuri</personname>
+                </author>
+                <author>
+                    <personname>Jan Schubert</personname>
+                </author>
+                <author>
+                    <personname>Willem Ferguson</personname>
+                </author>
+                <author>
+                    <personname>Salvador Cuñat</personname>
+                </author>
+                <author>
+                    <personname>Pedro Neves</personname>
+                </author>
+            </authorgroup>
+            <revhistory>
+                <revision>
+                    <revnumber/>
+                    <date/>
+                </revision>
+            </revhistory>
+        </info>
+        <sect1>
+            <title>Downloading &product;</title>
+        </sect1>
+        <sect1>
+            <title>Conventions used in this Manual</title>
+            <para>The following typographical conventions are used in this manual:</para>
+        </sect1>
+        <sect1>
+            <title>Getting Community Help</title>
+        </sect1>
+        <sect1>
+            <title>Contributing to the Project</title>
+            <sect2>
+                <title>Reporting Bugs</title>
+            </sect2>
+            <sect2>
+                <title>Getting the Sources</title>
+            </sect2>
+        </sect1>
+    </preface>
+    <chapter>
+        <title>Introduction</title>
+        <para>&product; can plan and track single- and multi-tank dives using air, Nitrox or TriMix.
+            &product; allows tracking of dive locations including GPS coordinates (which can also
+            conveniently be entered using a map interface), logging of equipment used and names of
+            other divers, and lets users rate dives and provide additional notes.</para>
+        <para>You can tag dives and filter a dive list based on criteria including tags, locations
+            and people with whom you were diving. You can group the dive list into trips, and edit
+            multiple dives at the same time, making it easy to support a large number of
+            dives.</para>
+        <para>One of the major strengths of Subsurface is its wide range of <xref
+                xlink:href="#appendix-supported-dive-computers"/>. Subsurface can also use existing
+            dive logs from several <xref xlink:href="#appendix-supported-dive-software"/>.</para>
+        <para>Another strength is its ability to visualize the depth profile (and, if available, the
+            tank pressure curve) in innovative ways that give the user additional information on
+            relative velocity, and momentary air consumption, during a dive. Users who dive with
+            multiple dive computers can combine the data from each of their dive computers into one
+            dive – allowing visualization of the data collected from multiple sources.</para>
+        <para>&product; also calculates a wide variety of statistics of the user’s diving and tracks
+            information like the SAC rate, partial pressures of O2, N2 and He, calculated deco
+            information, and many more.</para>
+        <para>Multiple divers can share one instance of Subsurface using different preferences and
+            settings.</para>
+        <para>The program is localized in about 20 languages and well supported by an active
+            developer community.</para>
+    </chapter>
+    <chapter>
+        <title/>
+    </chapter>
+    <xi:include href="appendix-installation.xml"/>
+    <xi:include href="appendix-supported-dive-computers.xml"/>
+    <xi:include href="appendix-supported-dive-software-imports.xml"/>
+</book>
