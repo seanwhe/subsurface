@@ -14,6 +14,10 @@
     <important>
         <para>Install of software on a computer may require administrative priviledges.</para>
     </important>
+    <sect1 xml:id="supported-target-devices" xreflabel="Supported Target Devices">
+        <title>Supported Target Devices</title>
+        
+    </sect1>
     <sect1>
         <title>Supported Operating Systems</title>
         <para>The latest version has been tested on the following operating systems and

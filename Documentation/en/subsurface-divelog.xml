@@ -96,15 +96,40 @@
         <sect1>
             <title>Downloading &product;</title>
         </sect1>
+
         <sect1>
-            <title>Conventions used in this Manual</title>
-            <para>The following typographical conventions are used in this manual:</para>
+            <title>Using this Manual</title>
+            <sect2>
+                <title>Conventions used in this Manual</title>
+                <para>The following typographical conventions are used in this manual:</para>
+            </sect2>
+            <sect2>
+                <title>Versions of this Manual</title>
+                <para>&product; renders differently on the various <xref
+                        xlink:href="#supported-target-devices"/>. To cater for this and make
+                    reading and reference of this manual easier</para>
+            </sect2>
         </sect1>
+
+
         <sect1>
-            <title>Getting Community Help</title>
+            <title>Getting Help</title>
         </sect1>
         <sect1>
             <title>Contributing to the Project</title>
+            <sect2>
+                <title>The User Survey</title>
+                <para>In order to develop &product; to serve its users in the best possible way,
+                    it’s important to have user information. After using the software for a week or
+                    so, a one-box user survey pops up. It is entirely optional and the user controls
+                    what, if any, data are sent to the project. All data the user sends is useful,
+                    and will only be used to steer future development and to customize the software
+                    to fit the needs of the &product; users. If you complete the survey, or click
+                    the option not to be asked again, that should be the last communication of this
+                    type you receive. However, if your diving and/or subsurface habits change and
+                    you wish to fill in another survey, just launch &product; with the
+                        <command>--survey</command> option on the command line.</para>
+            </sect2>
             <sect2>
                 <title>Reporting Bugs</title>
             </sect2>
@@ -115,7 +140,7 @@
     </preface>
     <chapter>
         <title>Introduction</title>
-        <para>&product; can plan and track single- and multi-tank dives using air, Nitrox or TriMix.
+        <para>&product; can plan and track single and multi-tank dives using Air, Nitrox or TriMix.
             &product; allows tracking of dive locations including GPS coordinates (which can also
             conveniently be entered using a map interface), logging of equipment used and names of
             other divers, and lets users rate dives and provide additional notes.</para>
@@ -144,5 +169,5 @@
     </chapter>
     <xi:include href="appendix-installation.xml"/>
     <xi:include href="appendix-supported-dive-computers.xml"/>
-    <xi:include href="appendix-supported-dive-software-imports.xml"/>
+    <xi:include href="appendix-supported-dive-software.xml"/>
 </book>
