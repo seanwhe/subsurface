@@ -8,7 +8,15 @@
 <chapter xml:id="getting-started" xreflabel="Getting Started" xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Getting Started</title>
-    <sect1 condition="desktop">
+    <para>The best way to get started using &productshort; is to make yourself familiar with the
+        menus and interface. This will give you an understanding of what features and functions are
+        available and how to find them when using the program. Once familiar, it is recomended that
+        you adjust the basic settings available in the <guilabel>Preferences</guilabel>.</para>
+    <para condition="desktop">This chapter is about getting you aquainted with &productdesktop;
+        edition. It gives you a quick tour of the Main Workspace of &productshort; including the
+        Main Menu and View Panels. It also covers setting of the preferences so that you may
+        configure &productshort; to work with the setting options of your choice.</para>
+    <sect1 condition="desktop" xml:id="desktop-main-workspace" xreflabel="Main Workspace">
         <title>Main Workspace</title>
         <para>The &productshort; workspace is comprised of a <xref xlink:href="#main-menu"/> and
                 <xref xlink:href="#view-panels"/>.</para>
@@ -376,51 +384,86 @@
                     <listitem>
                         <variablelist>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel/> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>1</keycap>
+                                    </keycombo>)</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays all <xref xlink:href="#view-panels"/> in the Main
+                                        Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel/> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>1</keycap>
+                                    </keycombo>)</term>
                                 <listitem>
-                                    <para></para>
+                                    <para/>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>Dive list</guilabel> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>2</keycap>
+                                    </keycombo>)</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays on the <guilabel>Dive List</guilabel> view panel
+                                        in the Main Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>Profile</guilabel> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>3</keycap>
+                                    </keycombo>)</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays on the <guilabel>Dive Profile</guilabel> view
+                                        panel in the Main Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>Profile</guilabel> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>4</keycap>
+                                    </keycombo>)</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays on the <guilabel>Dive Profile</guilabel> view
+                                        panel in the Main Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>Map</guilabel> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>5</keycap>
+                                    </keycombo>)</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays on the <guilabel>Dive Map</guilabel> view panel
+                                        in the Main Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>Yearly Statistics</guilabel> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>Y</keycap>
+                                    </keycombo>)</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays the <guilabel>Yearly Statistics</guilabel> report
+                                        window.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>Previous dive computer</guilabel> (
+                                        <keycap>Left</keycap> )</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>???</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guilabel>Next dive computer</guilabel> (
+                                        <keycap>Right</keycap> )</term>
+                                <listitem>
+                                    <para/>
                                 </listitem>
                             </varlistentry>
                         </variablelist>
@@ -431,15 +474,19 @@
                     <listitem>
                         <variablelist>
                             <varlistentry>
-                                <term></term>
+                                <term>Facebook</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Share the current selected or open dive on
+                                        Facebook.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term>Connect to</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays a sub-menu listing social media sites. When an
+                                        item is selected displays a configuration dialog that
+                                        enables setup and authentication with the selected social
+                                        media service.</para>
                                 </listitem>
                             </varlistentry>
                         </variablelist>
@@ -453,27 +500,31 @@
                     <listitem>
                         <variablelist>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>About Subsurface</guilabel></term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays the <guilabel>About Subsurface</guilabel> dialog
+                                        that displays the software version and provides quick access
+                                        to the License, Credits and Website.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>Check for updates</guilabel></term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Checks for newer versions of &productshort;</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>User survey</guilabel></term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays the <guilabel>User survey</guilabel>
+                                        dialog.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term></term>
+                                <term><guilabel>User Manual</guilabel> ( <keycap>F1</keycap>
+                                    )</term>
                                 <listitem>
-                                    <para></para>
+                                    <para>Displays the &productshort; User Manual.</para>
                                 </listitem>
                             </varlistentry>
                         </variablelist>
@@ -533,24 +584,115 @@
                 </varlistentry>
             </variablelist>
         </sect2>
-
-
-
-
     </sect1>
     <sect1 condition="mobile">
         <title>Main Workspace</title>
+        <!-- TBD -->
+        <sect2>
+            <title>Main Menu</title>
+        </sect2>
     </sect1>
     <sect1 condition="cloud">
         <title>Main Workspace</title>
+        <!-- TBD -->
+        <sect2>
+            <title>Main Menu</title>
+        </sect2>
     </sect1>
-    <sect1 condition="desktop">
-        <title>Main Menu</title>
-    </sect1>
-    <sect1 condition="mobile">
-        <title>Main Menu</title>
-    </sect1>
-    <sect1 condition="cloud">
-        <title>Main Menu</title>
+    <sect1 xml:id="setting-preferences" xreflabel="Setting Preferences">
+        <title>Setting Preferences</title>
+        <para condition="desktop">The <guilabel>Preferences</guilabel> dialog enables setting of
+            your personal preferences and requirements when working with &productdesktop;. Settings
+            saved in the <guilabel>Preferences</guilabel> will remain persistant for all future
+            sessions of the program. Settings within the <guilabel>Preferences</guilabel> dialog are
+            grouped as follows:</para>
+        <itemizedlist>
+            <listitem>
+                <para><xref xlink:href="#general-settings"/></para>
+            </listitem>
+            <listitem>
+                <para><xref xlink:href="#unit-settings"/></para>
+            </listitem>
+            <listitem>
+                <para><xref xlink:href="#language-settings"/></para>
+            </listitem>
+            <listitem>
+                <para><xref xlink:href="#profile-settings"/></para>
+            </listitem>
+            <listitem>
+                <para><xref xlink:href="#georeference-settings"/></para>
+            </listitem>
+            <listitem>
+                <para><xref xlink:href="#network-settings"/></para>
+            </listitem>
+        </itemizedlist>
+        <para>Select <menuchoice>
+                <guimenu>File</guimenu>
+                <guimenuitem>Preferences</guimenuitem>
+            </menuchoice> to display the <guilabel>Preferences</guilabel> dialog.</para>
+        <sect2 xml:id="general-settings" xreflabel="General Settings">
+            <title>General Settings</title>
+            <para>The <guilabel>General</guilabel> settings group </para>
+            <sect3>
+                <title>Lists and tables</title>
+                <para>The <guilabel>Lists and tables</guilabel> group enables you to select the type
+                    and size of font used throughout the user interface. The default font and size
+                    is dependant on your operating system defaults.</para>
+            </sect3>
+            <sect3>
+                <title>Dives</title>
+                <para>The <guilabel>Dives</guilabel> group enables you to define whether or not you
+                    want to use a default file for storing dive logs, options include:</para>
+                <variablelist>
+                    <varlistentry>
+                        <term><guilabel>No default file</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>No default</guibutton> radio button to disable use of a default log file.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Local default file</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Local default file</guibutton> radio button to enable use of a default log file. By default &productshort; will define a default path and file name for the default. You may choose to remain with the default suggestion or select a different path and file name.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Cloud storage default file</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Cloud storage default file</guibutton> radio button to use &productcloud; as the default location for storage.</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+                <para>If you choose to use a default file, then you may choose whether the default
+                    storage location is on the local disk or on the &productcloud; storage.</para>
+            </sect3>
+            <sect3>
+                <title>Default Cylinder</title>
+            </sect3>
+            <sect3>
+                <title>Animations</title>
+            </sect3>
+            <sect3>
+                <title>Video thumbnails</title>
+            </sect3>
+            <sect3>
+                <title>Clear settings</title>
+            </sect3>
+        </sect2>
+        <sect2 xml:id="unit-settings" xreflabel="Unit Settings">
+            <title>Unit Settings</title>
+        </sect2>
+        <sect2 xml:id="language-settings" xreflabel="Language Settings">
+            <title>Language Settings</title>
+        </sect2>
+        <sect2 xml:id="profile-settings" xreflabel="Profile Settings">
+            <title>Profile Settings</title>
+        </sect2>
+        <sect2 xml:id="georeference-settings" xreflabel="Georeference Settings">
+            <title>Georeference Settings</title>
+        </sect2>
+        <sect2 xml:id="network-settings" xreflabel="Network Settings">
+            <title>Network Settings</title>
+        </sect2>
     </sect1>
 </chapter>
