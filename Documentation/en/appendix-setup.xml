@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<appendix xml:id="appendix-setup-and-configuration" xreflabel="Setup and Configuration"
+    xmlns="http://docbook.org/ns/docbook">
+    <title>Setup and Configuration</title>
+    <sect1 xml:id="setup-support-for-video-thumbnails" xreflabel="Setup Support for Video Thumbnail">
+        <title>Setup Support for Video Thumbnails</title>
+        <para>&product; provides support for associating videos taken during a dive with a dive log.
+            When a video is associated with a dive log, &productshort; will display the video in the
+            &paneldiveprofile; panel or in the &paneldiveinfo; panel <guilabel>Media</guilabel> tab.
+            To make this possible &productshort; needs to generate and display a video thumbnail
+            from the associated video.</para>
+        <para>By default the video thumbnail is a nonspecific placeholder. To see thumbnails that
+            represent individual videos, &productshort; uses an external program called
+                    <application><link xlink:href="https://www.ffmpeg.org/"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">FFMPEG</link></application>.</para>
+        <orderedlist>
+            <title>To enable thumbnails for videos you need to:</title>
+            <listitem>
+                <para>Download <application><link xlink:href="https://www.ffmpeg.org/download.html"
+                            xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >FFMPEG</link></application>.</para>
+            </listitem>
+            <listitem>
+                <para>Install <application>FFMPEG</application></para>
+
+            </listitem>
+            <listitem>
+                <para>Enable <guibutton>Extract video thumnails</guibutton>.</para>
+            </listitem>
+        </orderedlist>
+        <note>
+            <variablelist>
+                <varlistentry>
+                    <term>Windows</term>
+                    <listitem>
+                        <para>Put the <application>ffmpeg.exe</application> file in the directory
+                            containing the &productshort; executable.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Mac and Linux</term>
+                    <listitem>
+                        <para>Ensure sure the ffmpeg command is in the environment path. This should
+                            be the case when installed from official packages.</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </note>
+        <orderedlist>
+            <title>To configure video thumbnail settings:</title>
+            <listitem>
+                <para>From the Main Menu select <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>Preferences</guimenuitem>
+                    </menuchoice>.</para>
+                <para>The <guilabel>Preferences</guilabel> is displayed.</para>
+            </listitem>
+            <listitem>
+                <para>Select the <guimenuitem>General</guimenuitem> options group.</para>
+            </listitem>
+            <listitem>
+                <para>Under <guilabel>Video thumbnails</guilabel> check the <guibutton>Extract video
+                        thumbnails</guibutton> checkbox.</para>
+            </listitem>
+            <listitem>
+                <para>Click the <guibutton>Save</guibutton> to store these settings.</para>
+            </listitem>
+            <listitem>
+                <para>Select a record from the &paneldivelist; that has a video associated with
+                    it.</para>
+            </listitem>
+            <listitem>
+                <para>Inspect the &paneldiveprofile; panel and &paneldiveinfo; panel
+                        <guilabel>Media</guilabel> tab to verify that the settings are
+                    working.</para>
+            </listitem>
+
+        </orderedlist>
+        <note>
+            <para>If &productshort; fails to load the <application>FFMPEG</application> executable,
+                the <guibutton>Extract video thumbnails</guibutton> checkbox will be unchecked.
+                After successfully installing <application>FFMPEG</application> check the checkbox
+                to re-enable <guibutton>Extract video thumbnails</guibutton>.</para>
+        </note>
+
+    </sect1>
+
+</appendix>

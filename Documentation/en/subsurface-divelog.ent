@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!ENTITY productversion "4.8.2">
 <!ENTITY product "<productname>Subsurface Divelog</productname>">
 <!ENTITY productshort "<productname>Subsurface</productname>">
 <!ENTITY productdesktop "<productname>Subsurface-desktop</productname>">
 <!ENTITY productmobile "<productname>Subsurface-mobile</productname>">
 <!ENTITY productcloud "<productname>Subsurface-cloud</productname>">
 <!ENTITY productplanner "<productname>Subsurface-planner</productname>">
-<!ENTITY productversion "4.8.2">
+<!ENTITY paneldivelist "<guilabel>Dive List</guilabel>">
+<!ENTITY paneldivemap "<guilabel>Dive Map</guilabel>">
+<!ENTITY paneldiveinfo "<guilabel>Dive Info</guilabel>">
+<!ENTITY paneldiveprofile "<guilabel>Dive profile</guilabel>">

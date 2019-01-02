@@ -14,6 +14,7 @@
         <title/>
     </chapter>
     <xi:include href="appendix-installation.xml"/>
+    <xi:include href="appendix-setup.xml"/>
     <xi:include href="appendix-supported-dive-computers.xml"/>
     <xi:include href="appendix-supported-dive-software.xml"/>
     <xi:include href="appendix-contribution-guidelines.xml"/>

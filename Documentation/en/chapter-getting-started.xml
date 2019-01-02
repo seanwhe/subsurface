@@ -349,8 +349,7 @@
                             <varlistentry>
                                 <term><guimenuitem>Auto group</guimenuitem></term>
                                 <listitem>
-                                    <para>Groups records in the <guilabel>Dive list</guilabel> by
-                                        location.</para>
+                                    <para>Groups records in the &paneldivelist; by location.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
@@ -369,8 +368,8 @@
                                     </keycombo>)</term>
                                 <listitem>
                                     <para>Displays the <guilabel>Filter</guilabel> sub panel that
-                                        enables the <guilabel>Dive List</guilabel> to be filtered
-                                        based on Tag, Person, Location and Suits properties.</para>
+                                        enables the &paneldivelist; to be filtered based on Tag,
+                                        Person, Location and Suits properties.</para>
                                 </listitem>
                             </varlistentry>
                         </variablelist>
@@ -403,13 +402,13 @@
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
-                                <term><guilabel>Dive list</guilabel> (<keycombo>
+                                <term>&paneldivelist; (<keycombo>
                                         <keycap>Ctrl</keycap>
                                         <keycap>2</keycap>
                                     </keycombo>)</term>
                                 <listitem>
-                                    <para>Displays on the <guilabel>Dive List</guilabel> view panel
-                                        in the Main Workspace.</para>
+                                    <para>Displays on the &paneldivelist; view panel in the Main
+                                        Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
@@ -418,8 +417,8 @@
                                         <keycap>3</keycap>
                                     </keycombo>)</term>
                                 <listitem>
-                                    <para>Displays on the <guilabel>Dive Profile</guilabel> view
-                                        panel in the Main Workspace.</para>
+                                    <para>Displays on the &paneldiveprofile;view panel in the Main
+                                        Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
@@ -428,8 +427,8 @@
                                         <keycap>4</keycap>
                                     </keycombo>)</term>
                                 <listitem>
-                                    <para>Displays on the <guilabel>Dive Profile</guilabel> view
-                                        panel in the Main Workspace.</para>
+                                    <para>Displays on the &paneldiveprofile;view panel in the Main
+                                        Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
@@ -438,8 +437,8 @@
                                         <keycap>5</keycap>
                                     </keycombo>)</term>
                                 <listitem>
-                                    <para>Displays on the <guilabel>Dive Map</guilabel> view panel
-                                        in the Main Workspace.</para>
+                                    <para>Displays on the &paneldivemap;view panel in the Main
+                                        Workspace.</para>
                                 </listitem>
                             </varlistentry>
                             <varlistentry>
@@ -547,7 +546,7 @@
                 total time and number of dives selected).</para>
             <variablelist>
                 <varlistentry>
-                    <term><guilabel>Dive List</guilabel> (bottom left)</term>
+                    <term>&paneldivelist; (bottom left)</term>
                     <listitem>
                         <para>Shows the dives in the user's dive log. Dives in the list can be
                             selected by clicking on a record. The selected record is highlighted. In
@@ -558,28 +557,28 @@
                     </listitem>
                 </varlistentry>
                 <varlistentry>
-                    <term><guilabel>Dive Map</guilabel> (bottom right)</term>
+                    <term>&paneldivemap;(bottom right)</term>
                     <listitem>
                         <para>Shows the dive site location of the record selected in the
-                                <guilabel>Dive List</guilabel>. The dive location is displayed
-                            centered on a world map and marked by a dive flag. The map scale can be
-                            increased or decreased.</para>
+                            &paneldivelist;. The dive location is displayed centered on a world map
+                            and marked by a dive flag. The map scale can be increased or
+                            decreased.</para>
                     </listitem>
                 </varlistentry>
                 <varlistentry>
-                    <term><guilabel>Dive Info</guilabel> (top left)</term>
+                    <term>&paneldiveinfo;(top left)</term>
                     <listitem>
                         <para>Shows more detailed information on the dive selected in the
-                                <guilabel>Dive List</guilabel>, including some statistics for the
-                            selected dive or for all highlighted dive(s).</para>
+                            &paneldivelist;, including some statistics for the selected dive or for
+                            all highlighted dive(s).</para>
                     </listitem>
                 </varlistentry>
                 <varlistentry>
-                    <term><guilabel>Dive Profile</guilabel> (top right)</term>
+                    <term>&paneldiveprofile;(top right)</term>
                     <listitem>
                         <para>Shows a graphical dive profile of the selected dive in the
-                                <guilabel>Dive List</guilabel>. You can zoom into the dive profile
-                            for a more detailed view.</para>
+                            &paneldivelist;. You can zoom into the dive profile for a more detailed
+                            view.</para>
                     </listitem>
                 </varlistentry>
             </variablelist>
@@ -611,7 +610,7 @@
                 <para><xref xlink:href="#general-settings"/></para>
             </listitem>
             <listitem>
-                <para><xref xlink:href="#unit-settings"/></para>
+                <para><xref xlink:href="#units-settings"/></para>
             </listitem>
             <listitem>
                 <para><xref xlink:href="#language-settings"/></para>
@@ -632,7 +631,11 @@
             </menuchoice> to display the <guilabel>Preferences</guilabel> dialog.</para>
         <sect2 xml:id="general-settings" xreflabel="General Settings">
             <title>General Settings</title>
-            <para>The <guilabel>General</guilabel> settings group </para>
+            <para>Select <menuchoice>
+                    <guimenu>File</guimenu>
+                    <guimenuitem>Preferences</guimenuitem>
+                    <guibutton>General</guibutton>
+                </menuchoice> to display the <guilabel>General</guilabel> preferences.</para>
             <sect3>
                 <title>Lists and tables</title>
                 <para>The <guilabel>Lists and tables</guilabel> group enables you to select the type
@@ -676,23 +679,179 @@
                         </listitem>
                     </varlistentry>
                 </variablelist>
-                
             </sect3>
             <sect3>
                 <title>Default Cylinder</title>
+                <para>The <guibutton>Use default cylinder</guibutton> drop list displays a list of
+                    known scuba cylinder models. When a default is selected it will be used in the
+                        <guibutton>Equipment</guibutton> the &paneldiveinfo; panel.</para>
             </sect3>
             <sect3>
                 <title>Animations</title>
+                <para>Some actions in showing the dive profile are performed using animations. For
+                    instance, the axis values for depth and time change from dive to dive. When
+                    viewing a different dive, these changes in axis characteristics do not happen
+                    instantaneously, but are animated. The _Speed_ of animations can be controlled
+                    by setting this slider with faster animation speed to the left, and a 0 value
+                    representing no animation at all.</para>
             </sect3>
             <sect3>
                 <title>Video thumbnails</title>
+                <para>The <guilabel>Video thumbnails</guilabel> group provides settings for
+                    management of thumbnails related to videos that may be associated with dives,
+                    including:</para>
+                <variablelist>
+                    <varlistentry>
+                        <term><guilabel>Extract video thumbnails</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Extract video thumbnails</guibutton>
+                                checkbox to enable use of thumbnails.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>ffmpeg executable</guilabel></term>
+                        <listitem>
+                            <para>Specify the path to the <application><link
+                                        xlink:href="https://www.ffmpeg.org/"
+                                    >FFMPEG</link></application> program used to perform
+                                manipulation on video files.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Extract folder</guilabel></term>
+                        <listitem>
+                            <para>Slide the <guibutton>Extract folder</guibutton> slider to select
+                                the frame within the video timeline to be used as the video
+                                thumbnail. The left and right-most positions of the slider position
+                                signify the beginning and the end of the video, respectively.</para>
+                            <note>
+                                <para>If &productshort; cannot determine the length of the video
+                                    (this can be the case for AVI files), the first frame of the
+                                    video will be used.</para>
+                            </note>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+                <para>For more information please refer to <link
+                        xlink:href="appendix-setup-and-configuration#setup-support-for-video-thumbnails"
+                        xlink:role="http://docbook.org/xlink/role/olink"/>.</para>
             </sect3>
             <sect3>
                 <title>Clear settings</title>
+                <para>The <guilabel>Clear settings</guilabel> group enables you to <guibutton>Reset
+                        remembered dive computers</guibutton> or <guibutton>Reset all settings back
+                        to their default</guibutton>.</para>
             </sect3>
         </sect2>
-        <sect2 xml:id="unit-settings" xreflabel="Unit Settings">
-            <title>Unit Settings</title>
+        <sect2 xml:id="units-settings" xreflabel="Unit Settings">
+            <title>Units Settings</title>
+            <para>Select <menuchoice>
+                    <guimenu>File</guimenu>
+                    <guimenuitem>Preferences</guimenuitem>
+                    <guibutton>Units</guibutton>
+                </menuchoice> to display the <guilabel>Units</guilabel> preferences.</para>
+            <sect3>
+                <title>Unit system</title>
+                <para>Unit of measure options available for the physics properties of a dive,
+                        <guilabel>Depth</guilabel>, <guilabel>Pressure</guilabel>,
+                        <guilabel>Volume</guilabel>, <guilabel>Temperature</guilabel> and
+                        <guilabel>Weight</guilabel>, may be displayed as <guilabel>Metric</guilabel>
+                    or <guilabel>Imperial</guilabel>. It is also possible to
+                        <guilabel>Personalise</guilabel> which unit of measure system a physics
+                    property is measured by.</para>
+                <variablelist>
+                    <varlistentry>
+                        <term><guilabel>Metric</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Metric</guibutton> radio button to cause all
+                                measures to be displayed using Metric Units of measure.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Imperial</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Imperial</guibutton> radio button to cause
+                                all measures to be displayed using Imperial Units of measure.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Personalise</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Personalise</guibutton> radio button enable
+                                the <guilabel>Individual settings</guilabel> option group.</para>
+                            <para>Select either <guibutton>Metric</guibutton> or
+                                    <guibutton>Imperial</guibutton> radio buttons for each of the
+                                physics properties.</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+
+            </sect3>
+            <sect3>
+                <title>Time units</title>
+                <para>Time units for the Ascent and Decent portions of dives can be displayed either
+                    as <guilabel>Minutes</guilabel> or <guilabel>Seconds</guilabel>.</para>
+                <variablelist>
+                    <varlistentry>
+                        <term><guilabel>Minutes</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Minutes</guibutton> radio button to cause
+                                Ascent and Decent time units to be displayed as minutes.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Seconds</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>Seconds</guibutton> radio button to cause
+                                Ascent and Decent time units to be displayed as seconds.</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </sect3>
+            <sect3>
+                <title>Duration units</title>
+                <para>The duration of a dive can be displayed using one of the following
+                    options:</para>
+                <variablelist>
+                    <varlistentry>
+                        <term><guilabel>hh:mm (always)</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>hh:mm (always)</guibutton> radio button to
+                                always display dives in the hh:mm format regardless of the
+                                duration.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>mm (always)</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>mm (always)</guibutton> radio button to
+                                always display dives in the mm format regardless of the
+                                duration.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>mm (for dives shorter than 1 hour), hh:mm
+                                (otherwise)</guilabel></term>
+                        <listitem>
+                            <para>Select the <guibutton>mm (for dives shorter than 1 hour), hh:mm
+                                    (otherwise)</guibutton> radio button to display dives that are
+                                less than 1 hour in mm format and all dives equal to or greater than
+                                one hour in length in the hh:mm format.</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </sect3>
+            <sect3>
+                <title>Dive list table</title>
+                <para>By default, to conserve screen real-estate and make for easier reading,
+                    &productshort; does not display measurement units in the &paneldivelist; panel.
+                    This can be changed from the <guilabel>Dive list table</guilabel> option group
+                    by checking the <guibutton>Show units in the dive table</guibutton>.</para>
+            </sect3>
+            <sect3>
+                <title>GPS Coordinates</title>
+                <para>The <guilabel>GPS Coordinates</guilabel> options group enables you to choose between <guilabel>deg/min/sec</guilabel> and <guilabel>decimal</guilabel> geo-location formats.</para>
+            </sect3>
         </sect2>
         <sect2 xml:id="language-settings" xreflabel="Language Settings">
             <title>Language Settings</title>

@@ -5,12 +5,16 @@
 <!ENTITY % myent SYSTEM "subsurface-divelog.ent">
 %myent;
 ]>
-<appendix xml:id="appendix-installation" xreflabel="Installation" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
-    version="5.1">
+<appendix xml:id="appendix-installation" xreflabel="Installation"
+    xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Installation</title>
     <para>Executable installation programs and source archives of the lastest version are available
         from the <link xlink:href="https://subsurface-divelog.org/download/">Project
             Downloads</link> page.</para>
+    <para>Following installation a number of setup tasks will be required in order to prepare the
+        software for use. Please see <link xlink:href="appendix-setup-and-configuration"
+            xlink:role="http://docbook.org/xlink/role/olink"/> for more detailed
+        instructions.</para>
     <important>
         <para>Install of software on a computer may require administrative priviledges.</para>
     </important>
@@ -226,7 +230,7 @@
                     phone.</para>
             </step>
             <step>
-                <para>Search for <application>&productmobile;</application>.</para>
+                <para>Search for &quot;&productmobile;&quot;.</para>
             </step>
             <step>
                 <para>Click the <guibutton>Install</guibutton> button.</para>
@@ -248,7 +252,8 @@
                     ><filename>INSTALL</filename></link> file located in the project <link
                 xlink:href="https://github.com/Subsurface-divelog/subsurface">&product; Github
                 Repository</link>.</para>
-        
-        
+
+
     </sect1>
+
 </appendix>

@@ -10,7 +10,6 @@
     <info>
         <title>&product;</title>
         <subtitle>User Manual</subtitle>
-        <productname>&product;</productname>
         <productnumber>&productversion;</productnumber>
         <pubdate>September 2018</pubdate>
         <abstract>
@@ -96,10 +95,6 @@
             </revision>
         </revhistory>
     </info>
-    <sect1>
-        <title>Downloading &product;</title>
-    </sect1>
-    
     <sect1>
         <title>Using this Manual</title>
         <sect2>
