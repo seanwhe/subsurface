@@ -647,24 +647,36 @@
                     <varlistentry>
                         <term><guilabel>No default file</guilabel></term>
                         <listitem>
-                            <para>Select the <guibutton>No default</guibutton> radio button to disable use of a default log file.</para>
+                            <para>Select the <guibutton>No default</guibutton> radio button to
+                                disable use of a default log file.</para>
                         </listitem>
                     </varlistentry>
                     <varlistentry>
                         <term><guilabel>Local default file</guilabel></term>
                         <listitem>
-                            <para>Select the <guibutton>Local default file</guibutton> radio button to enable use of a default log file. By default &productshort; will define a default path and file name for the default. You may choose to remain with the default suggestion or select a different path and file name.</para>
+                            <para>Select the <guibutton>Local default file</guibutton> radio button
+                                to enable use of a default log file. By default &productshort; will
+                                define a default path and file name for the default. You may choose
+                                to remain with the default suggestion or select a different path and
+                                file name.</para>
+                            <note>
+                                <para>Whether you choose to use the suggest default path and file
+                                    name or another, you must click the <guibutton>Use
+                                        default</guibutton> button to make use of the specified
+                                        <guilabel>Local dive log file</guilabel> path.</para>
+                            </note>
                         </listitem>
                     </varlistentry>
                     <varlistentry>
                         <term><guilabel>Cloud storage default file</guilabel></term>
                         <listitem>
-                            <para>Select the <guibutton>Cloud storage default file</guibutton> radio button to use &productcloud; as the default location for storage.</para>
+                            <para>Select the <guibutton>Cloud storage default file</guibutton> radio
+                                button to use &productcloud; as the default location for
+                                storage.</para>
                         </listitem>
                     </varlistentry>
                 </variablelist>
-                <para>If you choose to use a default file, then you may choose whether the default
-                    storage location is on the local disk or on the &productcloud; storage.</para>
+                
             </sect3>
             <sect3>
                 <title>Default Cylinder</title>
