@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<appendix xml:id="appendix-writing-custom-print-templates"
+    xreflabel="Writing Custom Print Templates" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Writing Custom Print Templates</title>
+    <para>&productshort; has a way to create or modify templates for printing dive logs to produce
+        customized printouts of them. Templates written in HTML, as well as a simple Grantlee
+        instruction set, are rendered to the print device by &productshort;.</para>
+</appendix>

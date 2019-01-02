@@ -5,7 +5,7 @@
 <!ENTITY % myent SYSTEM "subsurface-divelog.ent">
 %myent;
 ]>
-<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+<appendix xml:id="appendix-installation" xreflabel="Installation" xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
     version="5.1">
     <title>Installation</title>
     <para>Executable installation programs and source archives of the lastest version are available
@@ -16,9 +16,15 @@
     </important>
     <sect1 xml:id="supported-target-devices" xreflabel="Supported Target Devices">
         <title>Supported Target Devices</title>
-        
+        <para>&product; runs on the following hardware platforms:</para>
+        <simplelist>
+            <member>Intel and AMD based Personal Computers</member>
+            <member>Intel Macintosh</member>
+            <member>Smart Phone</member>
+            <member>iPhone</member>
+        </simplelist>
     </sect1>
-    <sect1>
+    <sect1 xml:id="supported-operating-systems" xreflabel="Supported Operating Systems">
         <title>Supported Operating Systems</title>
         <para>The latest version has been tested on the following operating systems and
             versions.</para>
@@ -80,7 +86,7 @@
             </varlistentry>
         </variablelist>
     </sect1>
-    <sect1>
+    <sect1 os="windows">
         <title>Installation on Windows</title>
         <para>Use the Windows installer to install. During installation the <guimenuitem>Start Menu
                 Folder</guimenuitem> is created and a shortcuts are added to the folder which
@@ -106,7 +112,7 @@
             </step>
         </procedure>
     </sect1>
-    <sect1>
+    <sect1 os="mac">
         <title>Installation on MacOS</title>
         <procedure>
             <title>To install on MacOS:</title>
@@ -128,7 +134,7 @@
             </step>
         </procedure>
     </sect1>
-    <sect1>
+    <sect1 os="linux">
         <title>Installation on Linux</title>
         <para>The project makes dedicated binaries available for a number of Linux flavours as well
             as a generic <application>AppImage</application> that should work on most any Linux
@@ -179,8 +185,8 @@
         </sect2>
         <sect2>
             <title>Installation on RPM-based Systems</title>
-            <para>The project maintains a build service project page from which it is possible to download and
-                install.</para>
+            <para>The project maintains a build service project page from which it is possible to
+                download and install.</para>
             <procedure>
                 <title>To install on RPM-based systems:</title>
                 <step>
@@ -206,16 +212,43 @@
             <title>Installation on other 64bit Linux Systems</title>
 
         </sect2>
-        <sect2>
-            <title>Installation on Android Devices</title>
-            
-        </sect2>
-        <sect2>
-            <title>Installation on iOS Devices</title>
-            
-        </sect2>
+    </sect1>
+    <sect1 os="android">
+        <title>Installation on Android Devices</title>
+        <para>&product; is available on <link xlink:href="https://play.google.com/store/apps">Google
+                Play Store</link>, where it is known as <link
+                xlink:href="https://play.google.com/store/apps/details?id=org.subsurfacedivelog.mobile"
+                >&productmobile;</link>.</para>
+        <procedure>
+            <title>To install on Android devices:</title>
+            <step>
+                <para>Start the <application>Play Store</application> application on your
+                    phone.</para>
+            </step>
+            <step>
+                <para>Search for <application>&productmobile;</application>.</para>
+            </step>
+            <step>
+                <para>Click the <guibutton>Install</guibutton> button.</para>
+            </step>
+        </procedure>
+    </sect1>
+    <sect1 os="ios">
+        <title>Installation on iOS Devices</title>
+        <para>????</para>
     </sect1>
     <sect1>
         <title>Building from Sources</title>
+        <para>&product; can be built from source but makes use of a number of source libraries and
+            frameworks. The most important ones include libdivecomputer, Qt, libxml2, libxslt,
+            libsqlite3, libzip, libgrantlee5 and libgit2.</para>
+        <para>The best place to start looking for information on building from source is in the
+                <link
+                xlink:href="https://github.com/Subsurface-divelog/subsurface/blob/master/INSTALL"
+                    ><filename>INSTALL</filename></link> file located in the project <link
+                xlink:href="https://github.com/Subsurface-divelog/subsurface">&product; Github
+                Repository</link>.</para>
+        
+        
     </sect1>
 </appendix>

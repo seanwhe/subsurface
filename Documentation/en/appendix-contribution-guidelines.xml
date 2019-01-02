@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<appendix xml:id="appendix-contribution-guidelines" xreflabel="Contribution Guidelines"
+    xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Contribution Guidelines</title>
+    <sect1>
+        <title>Where to Start</title>
+        <para>We assume that you already sucessfully downloaded, installed &product; and have been
+            using it to log your dives. Now you are looking for a way to contribute to the project.
+            There are many opportunities for community contributions, including:</para>
+        <simplelist>
+            <member>Submiting <xref xlink:href="#the-user-survey"/>.</member>
+            <member>Answering questions on <xref xlink:href="#the-user-forum"/>.</member>
+            <member>Reporting <xref xlink:href="#bugs-and-issues"/>.</member>
+            <member>Testing by running the <xref xlink:href="#lastest-builds"/> to ensure stuff
+                works as it should.</member>
+            <member>Developing features and enhancements.</member>
+            <member>Localising the User Interface.</member>
+            <member>Improving the documentation.</member>
+            <member>Translating the documentation.</member>
+        </simplelist>
+        <para>How you decide to contribute will depend largely on what skills and expertise you
+            have. The list above gives you an ordered approach to getting started.</para>
+    </sect1>
+    <sect1>
+        <title>For the Impatient</title>
+        <variablelist>
+            <varlistentry>
+                <term>Software License</term>
+                <listitem>
+                    <para><link xlink:href="https://www.gnu.org/licenses/gpl-2.0.en.html"
+                            >https://www.gnu.org/licenses/gpl-2.0.en.html</link></para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Documentation License</term>
+                <listitem>
+                    <para><link xlink:href="https://tdg.docbook.org/tdg/5.0/gfdl.html"
+                            >https://tdg.docbook.org/tdg/5.0/gfdl.html</link></para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Github Repository</term>
+                <listitem>
+                    <para><link xlink:href="https://github.com/Subsurface-divelog/subsurface"
+                            >https://github.com/Subsurface-divelog/subsurface</link></para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Bug Tracker</term>
+                <listitem>
+                    <para><link xlink:href="https://github.com/Subsurface-divelog/subsurface/issues"
+                            >https://github.com/Subsurface-divelog/subsurface/issues</link></para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Mailing List</term>
+                <listitem>
+                    <para><link
+                            xlink:href="http://lists.subsurface-divelog.org/cgi-bin/mailman/listinfo/subsurface"
+                            >http://lists.subsurface-divelog.org/cgi-bin/mailman/listinfo/subsurface</link></para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>IRC</term>
+                <listitem>
+                    <para>freenode #subsurface</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+    </sect1>
+    <sect1 xml:id="the-user-survey" xreflabel="The User Survey">
+        <title>The User Survey</title>
+        <para>In order to develop &product; to serve its users in the best possible way, it’s
+            important to have user information. After using the software for a week or so, a one-box
+            user survey pops up. It is entirely optional and the user controls what, if any, data
+            are sent to the project. All data the user sends is useful, and will only be used to
+            steer future development and to customize the software to fit the needs of the &product;
+            users. If you complete the survey, or click the option not to be asked again, that
+            should be the last communication of this type you receive. However, if your diving
+            and/or subsurface habits change and you wish to fill in another survey, just launch
+            &product; with the <command>--survey</command> option on the command line.</para>
+    </sect1>
+    <sect1 xml:id="bugs-and-issues" xreflabel="Bugs and Issues">
+        <title>Bugs and Issues</title>
+        <para>Just as there are many things right with &product;, there are also many things wrong
+            with &product;. If bugs and issues are not reported we will not necesarily get to know
+            about them. We encourage the community to report bugs and issues.</para>
+        <sect2>
+            <title>Before Reporting Bugs or Issues</title>
+            <para>That said, not all problems are necesarily a bug or an issue and some problems are
+                &quot;known&quot; bugs and issues. We therefore ask that before reporting a
+                bug/issue that you do the following:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Search <xref xlink:href="#the-user-forum"/> to see whether anyone else has
+                        encountered the same problem. There may be a solution already discussed and
+                        solved that may save you from frustration or moving forward with using
+                        &product;.</para>
+                </listitem>
+                <listitem>
+                    <para>Search the <link
+                            xlink:href="https://github.com/Subsurface-divelog/subsurface/issues">Bug
+                            and Issue Tracker</link> for an existing report on the
+                        subject/topic.</para>
+                </listitem>
+            </orderedlist>
+            <para>When searching <xref xlink:href="#the-user-forum"/> and <link
+                    xlink:href="https://github.com/Subsurface-divelog/subsurface/issues">Bug and
+                    Issue Tracker</link> comes up empty handed, then we ask that you:</para>
+            <orderedlist>
+                <listitem>
+                    <para>Post a question on <xref xlink:href="#the-user-forum"/> and discuss with
+                        the community. It may well be that something was missed and you have helped
+                        uncover a bug or an issue, in which case</para>
+                </listitem>
+                <listitem>
+                    <para>you will generally be ask to report your discovery to the <link
+                            xlink:href="https://github.com/Subsurface-divelog/subsurface/issues">Bug
+                            and Issue Tracker</link>.</para>
+                </listitem>
+            </orderedlist>
+            <note>
+                <para>While a bug or issue may irritate you. Not all bugs and issues are equal. Some
+                    bugs are more equal than others and will therefore take precedence over those
+                    that are less equal.</para>
+                <para>Community contributions are done on a volunteer basis. The pace at which fixes
+                    or enhancements happen is therefore subject to &quot;doing it yourself&quot; or
+                    waiting for somebody else wanting to &quot;scratch an itch&quot;.</para>
+            </note>
+        </sect2>
+        <sect2>
+            <title>Reporting Bugs and Issues</title>
+            <variablelist>
+                <varlistentry>
+                    <term>Be precise</term>
+                    <listitem>
+                        <para>Keep it short and on topic.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Try reproduce</term>
+                    <listitem>
+                        <para>Try to reproduce your bug using a recent version of the software, to
+                            see whether it has already been fixed.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Give context</term>
+                    <listitem>
+                        <para>Specify what operating system you are using and what version of
+                            &product; you are using. Specify what dive computer you are using or
+                            what is the source of your divelogs.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Be clear</term>
+                    <listitem>
+                        <para>Explain how to reproduce the problem, step by step, so others can
+                            reproduce the bug, or understand the request.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Be specific</term>
+                    <listitem>
+                        <para>Include only one problem per task.</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Testing</title>
+        <sect2>
+            <title>Latest Release</title>
+            <para>If you want the sources for the latest release, the archives and precompiled
+                binaries are available from <link
+                    xlink:href="https://github.com/Subsurface-divelog/subsurface/releases/latest"
+                    >Latest Release Tag</link> on Github.</para>
+        </sect2>
+        <sect2>
+            <title>Test Versions</title>
+            <para>Test versions of &product; are available from the <link
+                    xlink:href="http://subsurface-divelog.org/downloads/test/">Dev/Test
+                    Builds</link> page.</para>
+            <para>These are builds of the HEAD of origin/master (plus some other random files),
+                uploaded roughly &quot;whenever Dirk remembers to do so&quot;.</para>
+            <warning>
+                <para>Test Versions are intended primarily for the &product; testers - use at your
+                    own risk.</para>
+            </warning>
+        </sect2>
+        <sect2 xml:id="lastest-builds" xreflabel="Latest Builds">
+            <title>Latest Builds</title>
+            <para>If you want the latest pre-release release build, the archives and precompiled
+                binaries are available from <link
+                    xlink:href="https://github.com/Subsurface-divelog/subsurface/releases/tag/continuous"
+                    >Continuous Tag</link> on Github.</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Developing</title>
+        <para>If you would like to contribute patches that fix bugs or add new features, that is of
+            course especially welcome. If you are looking for places to start, look at the open bugs
+            in our <link xlink:href="https://github.com/Subsurface-divelog/subsurface/issues">Bug
+                and Issue Tracker</link>.</para>
+        <note>
+            <para>You will need to know something about working with Git and Github. The sections
+                below are just to give you some hints on how to proceed and what is expected when
+                submitting source contributions.</para>
+        </note>
+        <sect2>
+            <title>Getting the Source</title>
+            <para>You can get the latest development version (origin/master) from the project git
+                repository.</para>
+            <screen>
+$ git clone https://github.com/Subsurface-divelog/subsurface.git
+            </screen>
+        </sect2>
+        <sect2>
+            <title>Creating a Working Branch</title>
+            <para>You will need to create a working branch in which you can keep your development.
+                You can name your working branch anything you like. We recommend keeping the name
+                short, simple and related; that way the name will mean more and give a hint as to
+                what the intent of the work is about.</para>
+            <para>At the command line use the commands below to create a working branch. The example
+                commands below use <command>my-branch-name</command> as the name of the working
+                branch. Replace <command>&lt;my-branch-name&gt;</command> with a name of your
+                own.</para>
+            <screen>
+$ cd subsurface
+$ git checkout master
+$ git pull
+$ git checkout -d my-branch-name
+Switched to a new branch 'my-branch-name'
+            </screen>
+            <para>Now we can check that our branch has been created and we have switch to our new
+                working branch.</para>
+            <screen>
+$ git branch
+* my-branch-name
+  master
+            </screen>
+        </sect2>
+        <sect2>
+            <title>Creating a Commit</title>
+            <para>Once you have edited the source and you are happy that it compiles and that you
+                have satisfactory tested, you can create a commit. Feel free to break your changes
+                into multiple smaller commits.</para>
+            <para>The following command starts a commit using your systems default editor. Usually
+                you can define which by setting the environment variable <envar>GIT_EDITOR</envar>.
+                The <parameter>-s</parameter> option will help you add Signed-off-by line by the
+                committer at the end of the commit log message. The <parameter>-a</parameter> option
+                tells the command to automatically stage files that have been modified and deleted,
+                but new files you have not told Git about are not affected.</para>
+            <screen>
+$ git commit -s -a
+            </screen>
+            <para>When creating the commit there are some expectations. The commit must have:</para>
+            <variablelist>
+                <varlistentry>
+                    <term>header line</term>
+                    <listitem>
+                        <para>The first line of the commit is the subject or title. Keep it brief
+                            and to the point.</para>
+                        <para>That header line really should be meaningful, and really should be
+                            just one line. The header line is what is shown by tools like gitk and
+                            shortlog, and should summarize the change in one readable line of text,
+                            independently of the longer explanation.</para>
+                        <para>The preferred way to write a commit message is using <link
+                                xlink:href="https://en.wikipedia.org/wiki/Imperative_mood"
+                                >imperative mood</link>.</para>
+                        <example>
+                            <title>Example of Imperitive Mood</title>
+                            <para>&quot;Make foo do xyz&quot; instead of &quot;This patch makes foo
+                                do xyz&quot; or &quot;I made foo do xyz&quot;, as if you are giving
+                                commands or requests to the code base.</para>
+                        </example>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>body description</term>
+                    <listitem>
+                        <para>A few lines of text, explaining things in more detail, possibly giving
+                            some background about the issue being fixed, etc etc. The body of the
+                            commit message can be several paragraphs, and please do proper word-wrap
+                            and keep columns shorter than about 74 characters or so. That way
+                            &quot;git log&quot; will show things nicely even when it is
+                            indented.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Reported-by</term>
+                    <listitem>
+                        <para>If working on an existing issue report, provide the name of the person
+                            who reported.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Signed-off-by</term>
+                    <listitem>
+                        <para>Your Name followed by Your Email Address.</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+            <important>
+                <para>If your commit is not signed, it will not be accepted. For more information
+                    about the sign-off and what it means, please see <link
+                        xlink:href="http://developercertificate.org/"
+                        >developercertificate.org</link>.</para>
+            </important>
+            <para>Following is a minimal example of how a commit may look.</para>
+            <screen>
+Create user manual file
+
+Created the main user manual file in docbook5 xml.
+
+Reported-by: some-reporter
+Signed-off-by: someuser &lt;someuser@example.com&gt;
+
+On branch my-branch-name
+  Changes to be committed:
+    new file:   Documentation/en/subsurface-divelog.xml
+            </screen>
+        </sect2>
+        <sect2>
+            <title>Important Behaviour Changes</title>
+            <para>When important changes are made to behaviors, fixes or new features are introduced
+                an entry must be added to <filename>CHANGELOG.md</filename> file. Always add new
+                entries at the very top of the file above other existing entries. Use this layout
+                for new entries:</para>
+            <variablelist>
+                <varlistentry>
+                    <term>Area</term>
+                    <listitem>
+                        <para>Details about the change [reference thread / issue].</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Area1/Area2</term>
+                    <listitem>
+                        <para>When multiple areas are affected list the areas separated with a
+                            /</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+            <para>Here is a (non exhaustive) list of Areas that can be used:</para>
+            <itemizedlist>
+                <listitem>
+                    <para>Bluetooth</para>
+                </listitem>
+                <listitem>
+                    <para>Cloud-storage</para>
+                </listitem>
+                <listitem>
+                    <para>Desktop</para>
+                </listitem>
+                <listitem>
+                    <para>Dive pictures</para>
+                </listitem>
+                <listitem>
+                    <para>Import</para>
+                </listitem>
+                <listitem>
+                    <para>Libdivecomputer</para>
+                </listitem>
+                <listitem>
+                    <para>Map-widget</para>
+                </listitem>
+                <listitem>
+                    <para>Mobile</para>
+                </listitem>
+                <listitem>
+                    <para>Planner</para>
+                </listitem>
+                <listitem>
+                    <para>Printing</para>
+                </listitem>
+                <listitem>
+                    <para>Profile</para>
+                </listitem>
+            </itemizedlist>
+        </sect2>
+        <sect2>
+            <title>Submitting your Contribution</title>
+            <para>At this point there are two ways you can go:</para>
+            <variablelist>
+                <varlistentry>
+                    <term>Pull Request</term>
+                    <listitem>
+                        <para>This entails pushing your branch to GitHub and creating a pull
+                            requests on GitHub.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Patch File</term>
+                    <listitem>
+                        <para>This entails creating <filename>commit.patch</filename> files and
+                            sending them to the <xref xlink:href="#mailing-list"/>.</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+            <sect3>
+                <title>Creating a Pull Request</title>
+                <para>To use this method you must first push your changes to Github and then <link
+                        xlink:href="https://github.com/Subsurface-divelog/subsurface/pulls">create a
+                        Pull Request at the Project GitHub</link>.</para>
+            </sect3>
+            <sect3>
+                <title>Creating Patch Files</title>
+                <para>Patch files are text files that consists of a list of differences. In this
+                    case the difference between the origin/master branch and your working
+                    branch.</para>
+                <para>At the command line use the command below to create patch files. The example
+                    below used <command>my-branch-name</command> as the name of the working branch.
+                    Replace <command>&lt;my-branch-name&gt;</command> with a name of your
+                    own.</para>
+                <screen>
+git format-patch master..&quot;my-branch-name&quot;
+                </screen>
+                <para>After running this command you will have a number of files with names like
+                        <filename>0001-Commit-title.patch</filename>. These files can be archived
+                    and send to the <xref xlink:href="#mailing-list"/>.</para>
+            </sect3>
+        </sect2>
+        <sect2>
+            <title>Browsing and Forking</title>
+            <para>You can browse the sources and fork from the <link
+                    xlink:href="https://github.com/Subsurface-divelog/subsurface">Github
+                    Repository</link></para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Localising</title>
+        <para>Localisations are centrally handled at <link xlink:href="https://www.transifex.com/"
+                >Transifex</link>. Please sign up for an account there and then request to join the
+                <link xlink:href="https://www.transifex.com/subsurface/subsurface/">Subsurface
+                Team</link>.</para>
+    </sect1>
+    <sect1>
+        <title>Documenting</title>
+    </sect1>
+    <sect1>
+        <title>Translating</title>
+    </sect1>
+</appendix>

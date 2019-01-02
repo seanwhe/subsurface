@@ -1,3 +1,4 @@
+- Documentation: add Documentation/en folder with docbook5-xml sources
 - Core, Mobile: all controller states other than powered off are valid [#1903]
 - Core: shift dive time in correct direction [#1893]
 - Include average max depth in statistics

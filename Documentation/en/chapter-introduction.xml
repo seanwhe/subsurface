@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<chapter xml:id="introduction" xreflabel="Introduction" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Introduction</title>
+    <para>&productshort; can plan and track single and multi-tank dives using Air, Nitrox or TriMix.
+        &productshort; allows tracking of dive locations including GPS coordinates (which can also
+        conveniently be entered using a map interface), logging of equipment used and names of other
+        divers, and lets users rate dives and provide additional notes.</para>
+    <para>You can tag dives and filter a dive list based on criteria including tags, locations and
+        people with whom you were diving. You can group the dive list into trips, and edit multiple
+        dives at the same time, making it easy to support a large number of dives.</para>
+    <para>One of the major strengths of Subsurface is its wide range of <xref
+            xlink:href="#appendix-supported-dive-computers"/>. Subsurface can also use existing dive
+        logs from several <xref xlink:href="#appendix-supported-dive-software"/>.</para>
+    <para>Another strength is its ability to visualize the depth profile (and, if available, the
+        tank pressure curve) in innovative ways that give the user additional information on
+        relative velocity, and momentary air consumption, during a dive. Users who dive with
+        multiple dive computers can combine the data from each of their dive computers into one dive
+        – allowing visualization of the data collected from multiple sources.</para>
+    <para>&productshort; also calculates a wide variety of statistics of the user’s diving and
+        tracks information like the SAC rate, partial pressures of O2, N2 and He, calculated deco
+        information, and many more.</para>
+    <para>Multiple divers can share one instance of Subsurface using different preferences and
+        settings.</para>
+    <para>The program is localized in about 20 languages and well supported by an active developer
+        community.</para>
+    <sect1>
+        <title>Product Variants</title>
+        <para>&product; software is available as a desktop, mobile and web application variants.
+            Each of these has been named as follows:</para>
+        <variablelist>
+            <varlistentry>
+                <term>&productdesktop;</term>
+                <listitem>
+                    <para>The full program. An executable program installed on a desktop
+                        computer.</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>&productmobile;</term>
+                <listitem>
+                    <para>A mobile application installed on a smart phone.</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>&productcloud;</term>
+                <listitem>
+                    <para>A web application installed on the cloud and accessible by web
+                        browser.</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
+        <para>Each variant of the software is not only designed to run on a different target
+            hardware and environment, but also consistant of slight differences in
+            functionality.</para>
+        <sect2>
+            <title>&productdesktop;</title>
+            <para>&productdesktop; is the name given to the full program that can be downloaded and
+                installed on a computer desktop operating system such as Micoroft Windows, MacOS or
+                Linux. &productdesktop; is fully featured and serves as the main program for
+                recording and managing divelogs when using a desktop or laptop computer. While many
+                features of &productdesktop; are also available in &productmobile;, some features
+                are not. The Dive Planning module is only available in &productdesktop;.</para>
+        </sect2>
+        <sect2>
+            <title>&productmobile;</title>
+            <para>&productmobile; is the name given to the modile version of &productshort;. It can
+                be downloaded and installed on a smart phone device and is partially featured. It
+                serves as a more limited mobile version of &product; aimed at Android and iOS
+                smartphone and tablet devices, allowing viewing, entering, sharing, and storage of
+                dive information at dive sites where a larger computer is not useful. While the
+                desktop version of &product; shows much more detailed information for each dive,
+                &productmobile; allows a more accessible dive log on a dive trip, useful for proving
+                dive experience to dive shops or to review previous dives. &productmobile; also
+                allows the gathering of GPS locations where dives are performed using the GPS modem
+                that is an integral part of most mobile devices.</para>
+            <para>Users of &productmobile; typically use the mobile app as a companion to the
+                desktop version, sharing dive information between the mobile and the desktop
+                versions via the &productcloud; service. However, &productmobile; can also be used
+                independently of the desktop version and does not require the use of cloud
+                storage.</para>
+            <para>These items are discussed in greater detail in the following text. &productmobile;
+                does not support download of dive data from all the dive computers that
+                &productdesktop; can. This limitation is mainly caused by the ability to access
+                different type of devices on the two mobile platforms. On Android, a subset of dive
+                computers that use a FTDI USB interface or a Bluetooth/Bluetooth LE interface are
+                accessible by &productmobile;. On iOS, only Bluetooth LE based dive computers are
+                supported.</para>
+        </sect2>
+        <sect2>
+            <title>&productcloud;</title>
+            <para>&productcloud; is the name given to the &product; cloud service. It is not
+                possible to download or install &productcloud; because it is a web service that may
+                be utilised by &product; and &productmobile; to backup, store and exchange divelogs
+                between &product; and &productmobile;. It is accessible by a web browser. The
+                web-based application interface of &productcloud; provides a read-only reporting
+                interface.</para>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Feature Comparison</title>
+        <table>
+            <title>Product Variants Feature Comparison</title>
+            <tgroup cols="4">
+                <thead>
+                    <row>
+                        <entry>Feature</entry>
+                        <entry>Desktop</entry>
+                        <entry>Mobile</entry>
+                        <entry>Cloud</entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>Download divelogs direct</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>No</entry>
+                    </row>
+                    <row>
+                        <entry>Store divelogs locally</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>No</entry>
+                    </row>
+                    <row>
+                        <entry>Store divelogs on cloud</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>No</entry>
+                    </row>
+                    <row>
+                        <entry>View divelogs</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                    </row>
+                    <row>
+                        <entry>Manually create divelogs</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>No</entry>
+                    </row>
+                    <row>
+                        <entry>Edit data fields</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>No</entry>
+                    </row>
+                    <row>
+                        <entry>Record GPS Coordinates</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>No</entry>
+                    </row>
+                    <row>
+                        <entry>Viewing recorded GPS locations on a map</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                        <entry>Yes</entry>
+                    </row>
+                    <row>
+                        <entry>Dive Planning</entry>
+                        <entry>Yes</entry>
+                        <entry>No</entry>
+                        <entry>No</entry>
+                    </row>
+                </tbody>
+            </tgroup>
+        </table>
+    </sect1>
+</chapter>

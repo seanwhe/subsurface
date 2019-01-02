@@ -1,0 +1,556 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<chapter xml:id="getting-started" xreflabel="Getting Started" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Getting Started</title>
+    <sect1 condition="desktop">
+        <title>Main Workspace</title>
+        <para>The &productshort; workspace is comprised of a <xref xlink:href="#main-menu"/> and
+                <xref xlink:href="#view-panels"/>.</para>
+        <sect2 xml:id="main-menu" xreflabel="Main Menu">
+            <title>Main Menu</title>
+            <para>Each menu on the Main Menu displays a list of menu items. Menus may be accessed
+                using a mouse pointer or accelerator keys.</para>
+            <variablelist>
+                <varlistentry>
+                    <term><guimenu>File</guimenu> (<keycombo>
+                            <keycap>Alt</keycap>
+                            <keycap>F</keycap>
+                        </keycombo>)</term>
+                    <listitem>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>New logbook</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>N</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Starts a new empty logbook. </para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Open Logbook</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>O</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Open file</guilabel> dialog that
+                                        lists previously saved logbook files and enables opening of
+                                        a selected logbook file.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Save</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>S</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Saves the current open logbook.</para>
+                                    <para>When a logbook has never been saved, this behaves like a
+                                            <guimenuitem>Save as</guimenuitem> operation.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Save as</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>V</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the Save as dialog that enables saving of the
+                                        current open logbook to a new logbook file.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Open cloud storage</guimenuitem></term>
+                                <listitem>
+                                    <para>Connects to the &productcloud;, fetches data and displays
+                                        divelogs.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Save to cloud storage</guimenuitem></term>
+                                <listitem>
+                                    <para>Connects to the &productcloud;, sends data changes to the
+                                        cloud storage.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Cloud storage online</guimenuitem></term>
+                                <listitem>
+                                    <para>Toggles saving of the current logbook between local cache
+                                        and cloud storage.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Close</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>W</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Closes the current open logbook without exiting
+                                        &productshort;</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Export</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>E</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Export dive log files</guilabel>
+                                        dialog that can be used to export &productshort; logfile
+                                        format to file formats used by other divelog programs,
+                                        exchange formats and presentation formats.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Print</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>P</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Print</guilabel> dialog that can be
+                                        used to define print layout options, preview results and
+                                        send data to a printer.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Preferences</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>,</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Preferences</guilabel> dialog that
+                                        can be used to set user preferences related to various
+                                        functional areas of the software.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Find moved media files</guimenuitem></term>
+                                <listitem>
+                                    <para/>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Configure dive computer</guimenuitem> (<keycombo>
+                                        <keycap/>
+                                        <keycap>Shift</keycap>
+                                        <keycap>C</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Configure dive computer</guilabel>
+                                        dialog that can be used to define communication and settings
+                                        properties for various dive computer types.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Recent Logbooks</guimenuitem></term>
+                                <listitem>
+                                    <para>Lists four of the most recent logbooks to be opened in
+                                        order most to least recent.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Quit</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>Q</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Terminates &productshort;.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guimenu>Edit</guimenu> (<keycombo>
+                            <keycap>Alt</keycap>
+                            <keycap>E</keycap>
+                        </keycombo>)</term>
+                    <listitem>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Undo</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>Z</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Reverts the most recent changes made to an unsaved logbook
+                                        from most to least recent.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Redo</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>Shift</keycap>
+                                        <keycap>Z</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Roles back most recent changes undone by an
+                                            <guimenuitem>Undo</guimenuitem> operation to an unsaved
+                                        logbook from most to least recent.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guimenu>Import</guimenu> (<keycombo>
+                            <keycap>Alt</keycap>
+                            <keycap>I</keycap>
+                        </keycombo>)</term>
+                    <listitem>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Import from dive computer</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>D</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Download from dive
+                                            computer</guilabel> dialog that enables selection of
+                                        specific dive computer to download from and setting of
+                                        download options.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Import from log files</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>I</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Open dive log file</guilabel>
+                                        dialog that enables listing and selection of log files
+                                        stored in the <application>DataTrak</application> file
+                                        format.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Import from divelogs.de</guimenuitem></term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Web service connection</guilabel>
+                                        dialog that enables definition of divelog.de authentication
+                                        details and starting of an operation to fetch divelogs from
+                                        divelog.de.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guimenu>Log</guimenu> (<keycombo>
+                            <keycap>Alt</keycap>
+                            <keycap>L</keycap>
+                        </keycombo>)</term>
+                    <listitem>
+                        <variablelist>
+                            <varlistentry>
+                                <term><guimenuitem>Add dive</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>+</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para/>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Plan dive</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>L</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the &productplanner; module that enables dive
+                                        planning.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Edit dive in planner</guimenuitem></term>
+                                <listitem>
+                                    <para>Opens a dive plan selected in the <guilabel>Dive
+                                            List</guilabel> in the &productplanner; for
+                                        editing.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Copy dive components</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>C</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Components selection</guilabel>
+                                        dialog that enables copy of select properties of a divelog
+                                        to memory from which it can be pasted into another
+                                        divelog.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Paste dive components</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>V</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Pastes previously copied dive components into the divelog
+                                        currently selected in the <guilabel>Dive
+                                        List</guilabel>.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Renumber</guimenuitem> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>R</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Renumber</guilabel> dialog that
+                                        enables renumbering of all dives starting from a given
+                                        number.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Auto group</guimenuitem></term>
+                                <listitem>
+                                    <para>Groups records in the <guilabel>Dive list</guilabel> by
+                                        location.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem>Edit device names</guimenuitem></term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Edit dive computer
+                                            nicknames</guilabel> dialog that enables removing dive
+                                        computers from a list and appending nicknames to dive
+                                        computers.</para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term><guimenuitem/> (<keycombo>
+                                        <keycap>Ctrl</keycap>
+                                        <keycap>F</keycap>
+                                    </keycombo>)</term>
+                                <listitem>
+                                    <para>Displays the <guilabel>Filter</guilabel> sub panel that
+                                        enables the <guilabel>Dive List</guilabel> to be filtered
+                                        based on Tag, Person, Location and Suits properties.</para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guimenu>View</guimenu> (<keycombo>
+                            <keycap>Alt</keycap>
+                            <keycap>V</keycap>
+                        </keycombo>)</term>
+                    <listitem>
+                        <variablelist>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guimenu>Share on</guimenu></term>
+                    <listitem>
+                        <variablelist>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guimenu>Help</guimenu> (<keycombo>
+                            <keycap>Ctrl</keycap>
+                            <keycap>H</keycap>
+                        </keycombo>)</term>
+                    <listitem>
+                        <variablelist>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                            <varlistentry>
+                                <term></term>
+                                <listitem>
+                                    <para></para>
+                                </listitem>
+                            </varlistentry>
+                        </variablelist>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </sect2>
+        <sect2 xml:id="view-panels" xreflabel="View Panels">
+            <title>View Panels</title>
+            <para>The dividers between panels can be dragged to change the size of any of the
+                panels. &productshort; remembers the position of the dividers, so the next time
+                starts it uses the positions of the dividers from the last time the program was
+                used.</para>
+
+            <para>If a single dive is selected in the *Dive List*, the dive location, detailed
+                information and profile of the _selected dive_ are shown in the respective panels.
+                If several dives are selected, the last highlighted dive is the _selected dive_, but
+                summary data of all _highlighted dives_ is shown in the *Stats* tab of the *Info*
+                panel (maximum, minimum and average depths, durations, water temperatures and SAC;
+                total time and number of dives selected).</para>
+            <variablelist>
+                <varlistentry>
+                    <term><guilabel>Dive List</guilabel> (bottom left)</term>
+                    <listitem>
+                        <para>Shows the dives in the user's dive log. Dives in the list can be
+                            selected by clicking on a record. The selected record is highlighted. In
+                            adding to selection by mouse click, the <keycap>UP</keycap> and
+                                <keycap>DOWN</keycap> keys on the keyboard can also be used to
+                            change selection. Multiple dive records can be selected by holding down
+                            the <keycap>CTRL</keycap> key and clicking additional records.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guilabel>Dive Map</guilabel> (bottom right)</term>
+                    <listitem>
+                        <para>Shows the dive site location of the record selected in the
+                                <guilabel>Dive List</guilabel>. The dive location is displayed
+                            centered on a world map and marked by a dive flag. The map scale can be
+                            increased or decreased.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guilabel>Dive Info</guilabel> (top left)</term>
+                    <listitem>
+                        <para>Shows more detailed information on the dive selected in the
+                                <guilabel>Dive List</guilabel>, including some statistics for the
+                            selected dive or for all highlighted dive(s).</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term><guilabel>Dive Profile</guilabel> (top right)</term>
+                    <listitem>
+                        <para>Shows a graphical dive profile of the selected dive in the
+                                <guilabel>Dive List</guilabel>. You can zoom into the dive profile
+                            for a more detailed view.</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </sect2>
+
+
+
+
+    </sect1>
+    <sect1 condition="mobile">
+        <title>Main Workspace</title>
+    </sect1>
+    <sect1 condition="cloud">
+        <title>Main Workspace</title>
+    </sect1>
+    <sect1 condition="desktop">
+        <title>Main Menu</title>
+    </sect1>
+    <sect1 condition="mobile">
+        <title>Main Menu</title>
+    </sect1>
+    <sect1 condition="cloud">
+        <title>Main Menu</title>
+    </sect1>
+</chapter>
