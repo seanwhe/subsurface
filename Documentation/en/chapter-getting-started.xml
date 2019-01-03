@@ -8,15 +8,15 @@
 <chapter xml:id="getting-started" xreflabel="Getting Started" xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Getting Started</title>
-    <para>The best way to get started using &productshort; is to make yourself familiar with the
+    <para>The best way to get started using &productshort; is to first familiarise yourself with the
         menus and interface. This will give you an understanding of what features and functions are
         available and how to find them when using the program. Once familiar, it is recomended that
         you adjust the basic settings available in the <guilabel>Preferences</guilabel>.</para>
-    <para condition="desktop">This chapter is about getting you aquainted with &productdesktop;
-        edition. It gives you a quick tour of the Main Workspace of &productshort; including the
-        Main Menu and View Panels. It also covers setting of the preferences so that you may
-        configure &productshort; to work with the setting options of your choice.</para>
-    <sect1 condition="desktop" xml:id="desktop-main-workspace" xreflabel="Main Workspace">
+    <para>This chapter is about getting you aquainted with &productdesktop; edition. It gives you a
+        quick tour of the Main Workspace of &productshort; including the Main Menu and View Panels.
+        It also covers setting of the preferences so that you may configure &productshort; to work
+        with the setting options of your choice.</para>
+    <sect1 xml:id="desktop-main-workspace" xreflabel="Main Workspace">
         <title>Main Workspace</title>
         <para>The &productshort; workspace is comprised of a <xref xlink:href="#main-menu"/> and
                 <xref xlink:href="#view-panels"/>.</para>
@@ -163,7 +163,10 @@
                             <varlistentry>
                                 <term><guimenuitem>Find moved media files</guimenuitem></term>
                                 <listitem>
-                                    <para/>
+                                    <para>Photos and videos taken during dives can be associated
+                                        with dive logs. If these files are moved from their orginal
+                                        location when first associated use this option to locate
+                                        them and link them to the appropriate dives.</para>
                                 </listitem>
                             </varlistentry>
                         </variablelist>
@@ -462,7 +465,7 @@
                                 <term><guilabel>Next dive computer</guilabel> (
                                         <keycap>Right</keycap> )</term>
                                 <listitem>
-                                    <para/>
+                                    <para>???</para>
                                 </listitem>
                             </varlistentry>
                         </variablelist>
@@ -582,20 +585,6 @@
                     </listitem>
                 </varlistentry>
             </variablelist>
-        </sect2>
-    </sect1>
-    <sect1 condition="mobile">
-        <title>Main Workspace</title>
-        <!-- TBD -->
-        <sect2>
-            <title>Main Menu</title>
-        </sect2>
-    </sect1>
-    <sect1 condition="cloud">
-        <title>Main Workspace</title>
-        <!-- TBD -->
-        <sect2>
-            <title>Main Menu</title>
         </sect2>
     </sect1>
     <sect1 xml:id="setting-preferences" xreflabel="Setting Preferences">
@@ -850,7 +839,9 @@
             </sect3>
             <sect3>
                 <title>GPS Coordinates</title>
-                <para>The <guilabel>GPS Coordinates</guilabel> options group enables you to choose between <guilabel>deg/min/sec</guilabel> and <guilabel>decimal</guilabel> geo-location formats.</para>
+                <para>The <guilabel>GPS Coordinates</guilabel> options group enables you to choose
+                    between <guilabel>deg/min/sec</guilabel> and <guilabel>decimal</guilabel>
+                    geo-location formats.</para>
             </sect3>
         </sect2>
         <sect2 xml:id="language-settings" xreflabel="Language Settings">
@@ -858,12 +849,326 @@
         </sect2>
         <sect2 xml:id="profile-settings" xreflabel="Profile Settings">
             <title>Profile Settings</title>
+            <sect3>
+                <title>Gas pressure display setup</title>
+                <variablelist>
+                    <varlistentry>
+                        <term><guilabel>Threshold for pO<subscript>2</subscript> (minimum,
+                                maximum)</guilabel></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Threshold for pN<subscript>2</subscript> (maximum
+                                only)</guilabel></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Threshold for pHe (maximum only)</guilabel></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>pO<subscript>2</subscript> in calculating MOD (maximum
+                                only)</guilabel></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>CCR options</guilabel></term>
+                        <listitem>
+                            <variablelist>
+                                <varlistentry>
+                                    <term><guibutton>Dive planner default
+                                        setpoint</guibutton></term>
+                                    <listitem>
+                                        <para/>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guibutton>Show O<subscript>2</subscript> sensor values
+                                            when viewing
+                                        pO<subscript>2</subscript></guibutton></term>
+                                    <listitem>
+                                        <para/>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guibutton>Show CCR setpoints when viewing
+                                                pO<subscript>2</subscript></guibutton></term>
+                                    <listitem>
+                                        <para/>
+
+                                    </listitem>
+                                </varlistentry>
+
+                            </variablelist>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>pSCR options</guilabel></term>
+                        <listitem>
+                            <variablelist>
+                                <varlistentry>
+                                    <term><guibutton>pSCR metabolic rate
+                                            O<subscript>2</subscript></guibutton></term>
+                                    <listitem>
+                                        <para/>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guibutton>Dilution ratio</guibutton></term>
+                                    <listitem>
+                                        <para/>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guibutton>Show equivalent OC pO<subscript>2</subscript>
+                                            with pSCR pO<subscript>2</subscript></guibutton></term>
+                                    <listitem>
+                                        <para/>
+                                    </listitem>
+                                </varlistentry>
+                            </variablelist>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Show warnings for isobaric
+                            counterdiffusion</guilabel></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </sect3>
+            <sect3>
+                <title>Ceiling display setup</title>
+                <variablelist>
+                    <varlistentry>
+                        <term><guibutton>Draw dive computer reported ceiling red</guibutton></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Algorithm for calculated ceiling:</guilabel></term>
+                        <listitem>
+                            <variablelist>
+                                <varlistentry>
+                                    <term><guibutton>VPM-B</guibutton></term>
+                                    <listitem>
+                                        <variablelist>
+                                            <varlistentry>
+                                                <term><guibutton>Conservatism</guibutton></term>
+                                                <listitem>
+                                                  <para/>
+                                                </listitem>
+                                            </varlistentry>
+                                        </variablelist>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guibutton>Buhlmann</guibutton></term>
+                                    <listitem>
+                                        <variablelist>
+                                            <varlistentry>
+                                                <term><guibutton>GFLow</guibutton></term>
+                                                <listitem>
+                                                  <para/>
+                                                </listitem>
+                                            </varlistentry>
+                                            <varlistentry>
+                                                <term>GFHigh</term>
+                                                <listitem>
+                                                  <para/>
+                                                </listitem>
+                                            </varlistentry>
+                                        </variablelist>
+                                    </listitem>
+                                </varlistentry>
+                            </variablelist>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </sect3>
+            <sect3>
+                <title>Misc</title>
+                <variablelist>
+                    <varlistentry>
+                        <term><guibutton>Show unused cylinders in Equipment tab</guibutton></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guibutton>Show mean depth in Profile</guibutton></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guibutton>Recreate thumbnails if older than media
+                            file</guibutton></term>
+                        <listitem>
+                            <para/>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </sect3>
         </sect2>
         <sect2 xml:id="georeference-settings" xreflabel="Georeference Settings">
             <title>Georeference Settings</title>
+            <para>&productshort; supports geo-lookup services. The <guilabel>Dive site
+                    layout</guilabel> option group enables the name of the dive site be configured
+                using the names of geographical areas, including: <guilabel>Ocean</guilabel>,
+                    <guilabel>Country</guilabel>, <guilabel>State</guilabel>,
+                    <guilabel>County</guilabel>, <guilabel>Town</guilabel> and
+                    <guilabel>City</guilabel>. configured, e.g. _Country/State/City_ or
+                _City/State/Country_ (see image below). </para>
+            <para>The layout of the dive site name may be comprised of any combination of three
+                geographic areas seperated by <keycap>/</keycap>.</para>
+            <example>
+                <title>Example Dive site layout name conventions</title>
+                <para>
+                    <guimenuitem>Country</guimenuitem>
+                    <keycap>/</keycap>
+                    <guimenuitem>State</guimenuitem>
+                    <keycap>/</keycap>
+                    <guimenuitem>City</guimenuitem>
+                </para>
+                <para>
+                    <guimenuitem>City</guimenuitem>
+                    <keycap>/</keycap>
+                    <guimenuitem>State</guimenuitem>
+                    <keycap>/</keycap>
+                    <guimenuitem>Country</guimenuitem>
+                </para>
+            </example>
         </sect2>
         <sect2 xml:id="network-settings" xreflabel="Network Settings">
             <title>Network Settings</title>
+            <sect3>
+                <title>Proxy</title>
+                <para>When using the &productshort; cloud and update checks features, &productshort;
+                    needs to connect to the &product; servers on the internet. Some networks have a
+                    proxy server installed. The proxy server acts as an intermediatry between hosts
+                    inside the network and hosts outside the network. Since the proxy server handles
+                    all network requests and traffic leaving the network &productshort; needs to be
+                    made aware of the proxy and how to interact with it. The
+                        <guilabel>Proxy</guilabel> option group enables configuration of the
+                    settings required in order to access the internet via the proxy server.</para>
+                <note>
+                    <para>Please consult your network administrator if you do not know the required
+                        information.</para>
+                </note>
+                <variablelist>
+                    <varlistentry>
+                        <term><guilabel>Proxy type</guilabel></term>
+                        <listitem>
+                            <variablelist>
+                                <varlistentry>
+                                    <term><guilabel>No Proxy</guilabel></term>
+                                    <listitem>
+                                        <para>Select the <guimenuitem>No proxy</guimenuitem> item
+                                            from the <guimenu>Proxy type</guimenu> drop list when
+                                            the network does not have a Proxy Server.</para>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guilabel>System Proxy</guilabel></term>
+                                    <listitem>
+                                        <para>Select the <guimenuitem>System proxy</guimenuitem>
+                                            item from the <guimenu>Proxy type</guimenu> drop list
+                                            when your localhost has a Proxy Server defined.</para>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guilabel>HTTP proxy</guilabel></term>
+                                    <listitem>
+                                        <para>Select the <guimenuitem>HTTP proxy</guimenuitem> item
+                                            from the <guimenu>Proxy type</guimenu> drop list when
+                                            the network has a Proxy Server using the HTTP protocol
+                                            defined.</para>
+                                    </listitem>
+                                </varlistentry>
+                                <varlistentry>
+                                    <term><guilabel>Socks proxy</guilabel></term>
+                                    <listitem>
+                                        <para>Select the <guimenuitem>SOCKS proxy</guimenuitem> item
+                                            from the <guimenu>Proxy type</guimenu> drop list when
+                                            the network has a Proxy Server using UNIX
+                                            Sockets.</para>
+                                    </listitem>
+                                </varlistentry>
+                            </variablelist>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Hostname</guilabel></term>
+                        <listitem>
+                            <para>HTTP and SOCKS proxy servers generally reside on a host computer
+                                other than your localhost. Enter the proxy servers IP-address or
+                                Fully Qualified Domain Name (<acronym>FQDN</acronym> to help
+                                &product; resolve requests to the Proxy Server.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Port</guilabel></term>
+                        <listitem>
+                            <para>HTTP and SOCKS proxy servers run their services listening on a
+                                TCP/IP port. </para>
+                            <para>HTTP Proxy servers are normally configured to listen on port
+                                8080.</para>
+                            <para>SOCKS Proxy servers are normally configured to listen on port
+                                1080.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Requires authentication</guilabel></term>
+                        <listitem>
+                            <para>While most Proxy servers are configured to be transparent and do
+                                not require authentication, some proxy servers require
+                                authentication. In this case &productshort; proxy authentication can
+                                be enabled by selecting the <guibutton>Requires
+                                    authentication</guibutton> checkbox. This will enable the
+                                    <guibutton>Username</guibutton> and
+                                    <guibutton>Password</guibutton> fields.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Username</guilabel></term>
+                        <listitem>
+                            <para>Some proxy servers are configured to require authentication in
+                                order to use the services of the Proxy. In this case a username and
+                                password is required. Enter the <guibutton>Username</guibutton> of
+                                the account to authenticate with.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term><guilabel>Password</guilabel></term>
+                        <listitem>
+                            <para>Enter the password associated with the supplied
+                                    <guibutton>Username</guibutton>.</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+                <para/>
+            </sect3>
+            <sect3>
+                <title>&productshort; cloud storage</title>
+                <para>When using the &productcloud; storage services, authentication is
+                    required.</para>
+                <para>For more information on the process and procedure for creating a
+                    &productcloud; account please refer to <link
+                        xlink:href="appendix-setup-and-configuration#setup-cloud-storage-service"
+                        xlink:role="http://docbook.org/xlink/role/olink"/>.</para>
+            </sect3>
         </sect2>
     </sect1>
+
 </chapter>

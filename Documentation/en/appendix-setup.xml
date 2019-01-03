@@ -8,6 +8,100 @@
 <appendix xml:id="appendix-setup-and-configuration" xreflabel="Setup and Configuration"
     xmlns="http://docbook.org/ns/docbook">
     <title>Setup and Configuration</title>
+    <sect1 xml:id="setup-cloud-storage-service" xreflabel="Setup Cloud Storage Service">
+        <title>Setup Cloud Storage Service</title>
+        <para>&productcloud; provides cloud-based services for storage of dive logs created in
+            &productdesktop; and &productmobile; when these editions are configured to use
+            &productcloud; services. In doing so &productcloud; is able to facilitate not only the
+            storage of dive logs on the cloud but also serves as a means to exchange divelogs
+            between editions.</para>
+        <para>The setup of either edition is easy, quick to do and secure. All you need is an email
+            address and the ability to access your email inbox during the setup process.</para>
+        <orderedlist>
+            <title>To create a cloud storage account:</title>
+            <listitem>
+                <para>From the Main Menu, select <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>Preferences</guimenuitem>
+                    </menuchoice>.</para>
+                <para>The <guilabel>Preferences</guilabel> dialog is displayed.</para>
+            </listitem>
+            <listitem>
+                <para>Select the <guilabel>Network</guilabel> options group.</para>
+            </listitem>
+            <listitem>
+                <para>Enter your email address in the <guibutton>Email address</guibutton>
+                    field.</para>
+            </listitem>
+            <listitem>
+                <para>Enter a password in the <guibutton>Password</guibutton> field.</para>
+            </listitem>
+            <listitem>
+                <para>Click the <guibutton>Apply</guibutton> button.</para>
+                <para>After a second or two a message will be displayed at the bottom of the
+                    screen.</para>
+                <screen>Cloud account verification required, enter PIN in preferences.</screen>
+            </listitem>
+            <listitem>
+                <para>Check your email inbox for a an email from
+                    &quot;do_not_reply__@subsurface-divelog.org&quot; with subject &quot;Subsurface
+                    Cloud Account PIN&quot;.</para>
+                <para>This message will contain the PIN number you require in order to verify your
+                    &productcloud; account.</para>
+            </listitem>
+            <listitem>
+                <para>Enter the PIN to the <guibutton>Verification PIN</guibutton> field, then click
+                    the <guibutton>Apply</guibutton> button.</para>
+                <para>If the verification task is successful the options group lable will display
+                    the works &quot;(credentials verified)&quot;.</para>
+            </listitem>
+        </orderedlist>
+        <important>
+            <para>Congratulations you have sucessfully created your &productcloud; account. Remember
+                to write down the email address and password used so that you can recall it in the
+                event that you should forget.</para>
+        </important>
+        <orderedlist>
+            <title>To change you cloud storage account password:</title>
+            <listitem>
+                <para>From the Main Menu, select <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>Preferences</guimenuitem>
+                    </menuchoice>.</para>
+                <para>The <guilabel>Preferences</guilabel> dialog is displayed.</para>
+            </listitem>
+            <listitem>
+                <para>Select the <guilabel>Network</guilabel> options group.</para>
+            </listitem>
+            <listitem>
+                <para>Enter a password in the <guibutton>New password</guibutton> field.</para>
+            </listitem>
+            <listitem>
+                <para>Click the <guibutton>Save</guibutton> button.</para>
+            </listitem>
+            <listitem>
+                <para>Select <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>Open cloud storage</guimenuitem>
+                    </menuchoice> to check that you still have access to the cloud storage.</para>
+            </listitem>
+        </orderedlist>
+        <note>
+            <para>When changing password the current correct password must be entered to
+                    the<guibutton>Password</guibutton> field.</para>
+        </note>
+        <warning>
+            <para>At time of writing there is no way for a user to reset a &productcloud; account
+                password without manual intervention from one of the developers.</para>
+            <para>Please remember your email and password authentication combination, even write it
+                down somewhere.</para>
+            <para>In the event that you did not heed this warning, please read this thread on the
+                    <link xmlns:xlink="http://www.w3.org/1999/xlink"
+                    xlink:href="https://groups.google.com/forum/#!topic/subsurface-divelog/JM4etEKIeWk"
+                    >user forum</link>.</para>
+        </warning>
+
+    </sect1>
     <sect1 xml:id="setup-support-for-video-thumbnails" xreflabel="Setup Support for Video Thumbnail">
         <title>Setup Support for Video Thumbnails</title>
         <para>&product; provides support for associating videos taken during a dive with a dive log.

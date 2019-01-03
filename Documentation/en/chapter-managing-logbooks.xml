@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<chapter xml:id="chapter-managing-logbooks" xreflabel="Managing Logbooks" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Managing Logbooks</title>
+    <sect1>
+        <title>Creating New Logbooks</title>
+        <sect2>
+            <title>Create Locally Stored Logbooks</title>
+        </sect2>
+        <sect2>
+            <title>Create Cloud Stored Logbooks</title>
+        </sect2>
+    </sect1>
+    
+    <sect1>
+        <title>Saving Logbooks</title>
+        <sect2>
+            <title>Saving Logbooks to Local Storages</title>
+        </sect2>
+        <sect2>
+            <title>Saving Logbooks to Cloud Storages</title>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Opening Existing Logbooks</title>
+        <sect2>
+            <title>Opening Locally Stored Logbooks</title>
+        </sect2>
+        <sect2>
+            <title>Opening Cloud Stored Logbooks</title>
+        </sect2>
+    </sect1>
+</chapter>

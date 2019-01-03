@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://docbook.org/xml/5.1/rng/docbook.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://docbook.org/xml/5.1/sch/docbook.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<!DOCTYPE book [
+<!ENTITY % myent SYSTEM "subsurface-divelog.ent">
+%myent;
+]>
+<chapter xml:id="chapter-managing-dive-logs" xreflabel="Managing Dive Logs" xmlns="http://docbook.org/ns/docbook"
+    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+    <title>Managing Dive Logs</title>
+    <sect1>
+        <title>Creating Dive Logs</title>
+        
+    </sect1>
+    <sect1>
+        <title>Importing Dive Logs</title>
+    </sect1>
+    <sect1>
+        <title>Organising Dive Logs</title>
+        <sect2>
+            <title>Renumbering Dives</title>
+        </sect2>
+        <sect2>
+            <title>Auto Grouping Dives</title>
+        </sect2>
+        <sect2>
+            <title>Working with Dive Trips</title>
+            <sect3>
+                <title>Creating Dive Trip</title>
+            </sect3>
+            <sect3>
+                <title>Adding Dives to a Dive Trip</title>
+            </sect3>
+            <sect3>
+                <title>Removing Dives from a Dive Trip</title>
+            </sect3>
+        </sect2>
+        
+    </sect1>
+    <sect1>
+        <title>Editing Dive Logs</title>
+        <sect2>
+            <title>Modifying a Dive log</title>
+        </sect2>
+        <sect2>
+            <title>Undoing and Redoing Changes to a Dive Log</title>
+        </sect2>
+        <sect2>
+            <title>Copying Dive Components between Dive Logs</title>
+        </sect2>
+        <sect2>
+            <title>Deleting a Dive log</title>
+        </sect2>
+    </sect1>
+    <sect1>
+        <title>Filtering Dive Logs</title>
+    </sect1>
+    <sect1>
+        <title>Exporting Dive Logs</title>
+    </sect1>
+    <sect1>
+        <title>Printing Dive Logs</title>
+    </sect1>
+</chapter>

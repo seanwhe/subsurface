@@ -10,9 +10,10 @@
     <xi:include href="preface.xml"/>
     <xi:include href="chapter-introduction.xml"/>
     
-    <chapter>
-        <title/>
-    </chapter>
+    <xi:include href="chapter-managing-logbooks.xml"/>
+    <xi:include href="chapter-managing-dive-logs.xml"/>
+    <xi:include href="chapter-planning-dives.xml"/>
+    
     <xi:include href="appendix-installation.xml"/>
     <xi:include href="appendix-setup.xml"/>
     <xi:include href="appendix-supported-dive-computers.xml"/>

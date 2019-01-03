@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!ENTITY productversion "4.8.2">
 <!ENTITY product "<productname>Subsurface Divelog</productname>">
-<!ENTITY productshort "<productname>Subsurface</productname>">
+<!ENTITY productshort "Subsurface">
 <!ENTITY productdesktop "<productname>Subsurface-desktop</productname>">
 <!ENTITY productmobile "<productname>Subsurface-mobile</productname>">
 <!ENTITY productcloud "<productname>Subsurface-cloud</productname>">
