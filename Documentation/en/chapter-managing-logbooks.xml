@@ -5,35 +5,147 @@
 <!ENTITY % myent SYSTEM "subsurface-divelog.ent">
 %myent;
 ]>
-<chapter xml:id="chapter-managing-logbooks" xreflabel="Managing Logbooks" xmlns="http://docbook.org/ns/docbook"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xml:id="chapter-managing-logbooks" xreflabel="Managing Logbooks"
+    xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Managing Logbooks</title>
+    <para>You can create and maintain a single logbook or multiple different logbooks. You can
+        choose to store logbooks on your local hard drive, on the cloud storage or work with a
+        combination of both.</para>
     <sect1>
         <title>Creating New Logbooks</title>
-        <sect2>
-            <title>Create Locally Stored Logbooks</title>
-        </sect2>
-        <sect2>
-            <title>Create Cloud Stored Logbooks</title>
-        </sect2>
+        <orderedlist>
+            <title>To create a new logbook:</title>
+            <listitem>
+                <para>Select <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>New logbook</guimenuitem>
+                    </menuchoice>.</para>
+                <para>Any open logbook is closed and a new empty logbook is displayed.</para>
+            </listitem>
+        </orderedlist>
+        <note>
+            <para>If there are unsaved changes in the current open logbook, you will be prompted
+                whether or not to save before a new logbook is created.</para>
+        </note>
+        <important>
+            <para>If you have enabled &productcloud; storage you will receive a message at the
+                bottom of the screen advising you &quot;Don't save an empty log to the cloud.&quot;.
+                You will therefore not be able to save the new empty logbook to the cloud until at
+                least one dive log has been addded to the logbook.</para>
+        </important>
     </sect1>
-    
+
     <sect1>
-        <title>Saving Logbooks</title>
+        <title>Saving a Logbook</title>
+        <para>While working in a logbook changes are not automatically saved. Instead you must
+            decide when and where you want to save a logbook.</para>
+        <para>Logbooks can be saved to the following locations:</para>
+        <variablelist>
+            <varlistentry>
+                <term>Local storage</term>
+                <listitem>
+                    <para>You local hard drive or shared drive on your local network.</para>
+                </listitem>
+            </varlistentry>
+            <varlistentry>
+                <term>Cloud storage</term>
+                <listitem>
+                    <para>The &productcloud; storage service</para>
+                </listitem>
+            </varlistentry>
+        </variablelist>
         <sect2>
-            <title>Saving Logbooks to Local Storages</title>
+            <title>Saving Logbooks to Local Storage</title>
+            <orderedlist>
+                <title>To save a logbook to local storage:</title>
+                <listitem>
+                    <para></para>
+                </listitem>
+            </orderedlist>
         </sect2>
         <sect2>
-            <title>Saving Logbooks to Cloud Storages</title>
+            <title>Saving Logbooks to Cloud Storage</title>
+            <important>
+                <para>For this feature to work you must have a &productcloud; account (see <link
+                        xlink:href="setup-cloud-storage-service"
+                        xlink:role="http://docbook.org/xlink/role/olink"/>.</para>
+            </important>
+            <note>
+                <para>New empty logbooks cannot be saved cloud until at
+                    least one dive log has been addded to the logbook.</para>
+            </note>
+            <warning>
+                <para></para>
+            </warning>
+            <orderedlist>
+                <title>To save a logbook to cloud storage:</title>
+                <listitem>
+                    <para>Ensure the <guimenuitem>Cloud storage online</guimenuitem> checkbox is
+                        checked <menuchoice>
+                            <guimenu>File</guimenu>
+                            <guimenuitem>Cloud storage online</guimenuitem>
+                        </menuchoice></para>
+                    <para>Any unsaved changes in the logbook will be saved and pushed to the cloud
+                        storage.</para>
+                </listitem>
+                <listitem>
+                    <para>Select <menuchoice>
+                            <guimenu>File</guimenu>
+                            <guimenuitem>Save</guimenuitem>
+                        </menuchoice> for any further times you want to save.</para>
+                </listitem>
+            </orderedlist>
+            <note>
+                <para>While the <guimenuitem>Cloud storage online</guimenuitem> checkbox is checked.
+                    Both the <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>Save</guimenuitem>
+                    </menuchoice> and the <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>Save to online cloud</guimenuitem>
+                    </menuchoice> menu items will push changes to the cloud.</para>
+            </note>
         </sect2>
     </sect1>
     <sect1>
         <title>Opening Existing Logbooks</title>
         <sect2>
             <title>Opening Locally Stored Logbooks</title>
+            <orderedlist>
+                <title>To open a logbook from local storage:</title>
+                <listitem>
+                    <para>Select <menuchoice>
+                            <guimenu>File</guimenu>
+                            <guimenuitem>Open logbook</guimenuitem>
+                        </menuchoice>.</para>
+                    <para>The <guilabel>Open file</guilabel> dialog is displayed.</para>
+                </listitem>
+                <listitem>
+                    <para>Navigate to and select the log file you want to open.</para>
+                </listitem>
+                <listitem>
+                    <para>Click the<guibutton>Open</guibutton> button.</para>
+                    <para>The selected logbook will be opened and displayed.</para>
+                </listitem>
+            </orderedlist>
         </sect2>
         <sect2>
             <title>Opening Cloud Stored Logbooks</title>
+            <important>
+                <para>For this feature to work you must have a &productcloud; account (see <link
+                        xlink:href="setup-cloud-storage-service"
+                        xlink:role="http://docbook.org/xlink/role/olink"/>.</para>
+            </important>
+            <orderedlist>
+                <title>To open a logbook from cloud storage:</title>
+                <listitem>
+                    <para>Select <menuchoice>
+                            <guimenu>File</guimenu>
+                            <guimenuitem>Open cloud storage</guimenuitem>
+                        </menuchoice>.</para>
+                    <para>The logbook stored in the cloud will be opened and displayed.</para>
+                </listitem>
+            </orderedlist>
         </sect2>
     </sect1>
 </chapter>

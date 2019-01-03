@@ -14,6 +14,15 @@
     </sect1>
     <sect1>
         <title>Importing Dive Logs</title>
+        <sect2>
+            <title>Importing from a Dive Computer</title>
+        </sect2>
+        <sect2>
+            <title>Importing from Dive Log Software</title>
+        </sect2>
+        <sect2>
+            <title>Importing from CSV Files</title>
+        </sect2>
     </sect1>
     <sect1>
         <title>Organising Dive Logs</title>
@@ -60,5 +69,17 @@
     </sect1>
     <sect1>
         <title>Printing Dive Logs</title>
+    </sect1>
+    <sect1>
+        <title>Logging Special Types of Dives</title>
+        <sect2>
+            <title>Multicylinder dives</title>
+        </sect2>
+        <sect2>
+            <title>Sidemount Dives</title>
+        </sect2>
+        <sect2>
+            <title>Closed Circuit Rebreather (CCR) Dives</title>
+        </sect2>
     </sect1>
 </chapter>
