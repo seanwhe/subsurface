@@ -8,8 +8,42 @@
 <chapter xml:id="chapter-managing-dive-logs" xreflabel="Managing Dive Logs" xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Managing Dive Logs</title>
+    <para>&product; supports the following methods of adding dive data to a logbook. Dive logs can be:</para>
+    <variablelist>
+        <varlistentry>
+            <term>Created manually</term>
+            <listitem>
+                <para>Dives recorded in written logbooks can be manually entered by hand.</para>
+            </listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>Imported from external sources including:</term>
+            <listitem>
+                <variablelist>
+                    <varlistentry>
+                        <term>Spreadsheets or CSV Files</term>
+                        <listitem>
+                            <para>Dives recorded using spreadsheet programs can be exported to CSV file format. Provided that each record in the spreadsheet represents a single dive, it may be possible to import the dive logs assuming the delimetered fields can be mapped.</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>Dive Computers</term>
+                        <listitem>
+                            <para></para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term></term>
+                        <listitem>
+                            <para>Proprietary software distributed by dive computer manufacturers</para>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </listitem>
+        </varlistentry>
+    </variablelist>
     <sect1>
-        <title>Creating Dive Logs</title>
+        <title>Manually Creating Dive Logs</title>
         
     </sect1>
     <sect1>

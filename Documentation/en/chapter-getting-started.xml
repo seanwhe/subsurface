@@ -16,6 +16,133 @@
         quick tour of the Main Workspace of &productshort; including the Main Menu and View Panels.
         It also covers setting of the preferences so that you may configure &productshort; to work
         with the setting options of your choice.</para>
+    <sect1 xml:id="starting-the-program" xreflabel="Starting the Program">
+        <title>Starting the Program</title>
+        <sect2>
+            <title>Windows</title>
+        </sect2>
+        <sect2>
+            <title>MacOS</title>
+        </sect2>
+        <sect2>
+            <title>Linux</title>
+        </sect2>
+        <sect2>
+            <title>Command Line (CLI)</title>
+            <para>&productshort; can be launched from the command-line to set some specialised
+                settings or as part of a script-based automated process for manipulating a dive log.
+                The format for launching Subsurface from the command-line is:</para>
+            <screen>
+subsurface [options] [logfile ...] [--import logfile ...]
+                </screen>
+            <table>
+                <title>Command-line Options</title>
+                <tgroup cols="2">
+                    <thead>
+                        <row>
+                            <entry>Command-line Option</entry>
+                            <entry>Description</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>-h --help</entry>
+                            <entry>Print a summary of the command-line options</entry>
+                        </row>
+                        <row>
+                            <entry>--import logfile</entry>
+                            <entry>A file name before this option is treated as an existing dive
+                                log, everything after is imported into the existing dive log</entry>
+                        </row>
+                        <row>
+                            <entry>-v --verbose</entry>
+                            <entry>Print debug information while running</entry>
+                        </row>
+                        <row>
+                            <entry>-v -v</entry>
+                            <entry>Print even more debug information while running</entry>
+                        </row>
+                        <row>
+                            <entry>--version</entry>
+                            <entry>Prints the current version</entry>
+                        </row>
+                        <row>
+                            <entry>--survey</entry>
+                            <entry>Opens the user survey immediately after starting</entry>
+                        </row>
+                        <row>
+                            <entry>--user=&lt;username&gt;</entry>
+                            <entry>Choose the configuration space of user &lt;username&gt; as
+                                described in <xref xlink:href="#starting-with-a-user-profile"
+                                />.</entry>
+                        </row>
+                        <row>
+                            <entry>--cloud-timeout=&lt;duration&gt;</entry>
+                            <entry>Set the timeout for cloud connection (0 &lt; duration &lt; 60).
+                                This enables longer timeouts for slow Internet connections</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </sect2>
+        <sect2 xml:id="starting-with-a-user-profile" xreflabel="Starting with a User Profile">
+            <title>Starting with a User Profile</title>
+            <para>A frequent need is for two or more persons to use &productshort; on the same
+                desktop computer. For instance members of a household may use the same computer or
+                one family member may perform dive uploads for other family members/friends. There
+                are two approaches for doing this:</para>
+            <orderedlist numeration="loweralpha">
+                <listitem>
+                    <para>If the different users of a desktop computer do not log onto the
+                        desktop/laptop under different user names then the simplest way is for each
+                        person to use her/his own divelog file within &productshort;.</para>
+                    <para>In this case John would work with the &productshort; file
+                        johns-divelogbook and Joan would use joans-divelogbook. The appropriate dive
+                        divelogbook can be selected by selecting <menuchoice>
+                            <guimenu>File</guimenu>
+                            <guimenuitem>Open logbook</guimenuitem>
+                        </menuchoice>.</para>
+
+                    <para>However, a problem arises if the users prefer different settings for
+                        &productshort;. For instance, one diver may prefer to see the dive ceiling
+                        in the Profile Panel and media icons in the Dive List, while the other may
+                        not have these preferences. In addition, the cloud connection is normally
+                        unique for each &productshort; installation and if more than one user wishes
+                        to save dive data on the cloud, it is inconvenient to open the Preferences
+                        and change the authentication details every time the cloud is
+                        accessed.</para>
+                    <para>To solve these problems, launch &productshort; with a
+                            <command>--user=&lt;user name&gt;</command> command-line option. John
+                        can then activate &productshort; with this command-line instruction:</para>
+                    <screen>
+subsurface --user=John
+                    </screen>
+                    <para>while Joan can launch &productshort; using:</para>
+                    <screen>
+subsurface --user=Joan
+                    </screen>
+                    <para>In this case, each user’s preferences, settings and cloud access
+                        information are stored separately, allowing each diver to interact with
+                        &productshort; in thier preferred way and with individual cloud access. The
+                        above process can be made user-friendly by creating a link/shortcut with a
+                        desktop icon that executes the above command-line instruction.</para>
+                    <para>Use of the <command>--user=</command> option therefore enables each user
+                        to create, maintain and backup a separate dive log within a personalised
+                        user interface. This way, when each diver launches &productshort;, it opens
+                        with the correct dive log as well as the appropriate display and backup
+                        preferences, and each diver can access their own divelog on a mobile device
+                        using &productmobile;.</para>
+                </listitem>
+                <listitem>
+                    <para>On the other hand, if the users log onto the same computer using different
+                        userIDs and passwords (i.e. users each have a separate user space),
+                        &productshort; is available independently to each user and every diver
+                        automatically has a separate user profile and settings, including unique
+                        cloud and &productmobile; access.</para>
+                </listitem>
+            </orderedlist>
+        </sect2>
+    </sect1>
     <sect1 xml:id="desktop-main-workspace" xreflabel="Main Workspace">
         <title>Main Workspace</title>
         <para>The &productshort; workspace is comprised of a <xref xlink:href="#main-menu"/> and
