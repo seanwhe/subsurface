@@ -8,14 +8,34 @@
 <chapter xml:id="getting-started" xreflabel="Getting Started" xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Getting Started</title>
-    <para>The best way to get started using &productshort; is to first familiarise yourself with the
-        menus and interface. This will give you an understanding of what features and functions are
-        available and how to find them when using the program. Once familiar, it is recomended that
-        you adjust the basic settings available in the <guilabel>Preferences</guilabel>.</para>
-    <para>This chapter is about getting you aquainted with &productdesktop; edition. It gives you a
-        quick tour of the Main Workspace of &productshort; including the Main Menu and View Panels.
-        It also covers setting of the preferences so that you may configure &productshort; to work
-        with the setting options of your choice.</para>
+    <para>This chapter assumes that you have already successfully <link xlink:href="appendix-installation"
+        xlink:role="http://docbook.org/xlink/role/olink">downloaded and installed</link>
+        &product; and is focused on getting you aquainted with &productdesktop; edition. It gives
+        you a quick tour of the <guilabel>Main Workspace</guilabel> of &productshort; including the
+            <guilabel>Main Menu</guilabel> and <guilabel>View Panels</guilabel>. It also covers
+        setting of the program <guilabel>Preferences</guilabel> so that you may configure
+        &productshort; to work with the options settings of your choice.</para>
+    <para>The best way to get started using &productshort; is to first familiarise yourself with
+            <guilabel>Main Workspace</guilabel>. This will give you an understanding of what
+        features and functions are available and how to find them when using the program. Once
+        familiar, it is recomended that you adjust the basic settings available in the
+            <guilabel>Preferences</guilabel>.</para>
+    <orderedlist>
+        <title>Steps to getting started:</title>
+        <listitem>
+            <para>Start the program</para>
+        </listitem>
+        <listitem>
+            <para>Familiarise with the main workspace</para>
+        </listitem>
+        <listitem>
+            <para>Set your preferences</para>
+        </listitem>
+    </orderedlist>
+    <para>Once your preference settings are done a number of setup tasks will be required in order to prepare the
+        software for use. Please see <link xlink:href="appendix-setup-and-configuration"
+            xlink:role="http://docbook.org/xlink/role/olink"/> for more detailed
+        instructions.</para>
     <sect1 xml:id="starting-the-program" xreflabel="Starting the Program">
         <title>Starting the Program</title>
         <sect2>
@@ -26,6 +46,21 @@
         </sect2>
         <sect2>
             <title>Linux</title>
+            <orderedlist>
+                <title>Starting on the GNOME3 Desktop</title>
+                <listitem>
+                    <para>Select the <guibutton>Show Application</guibutton> button on the
+                            <guilabel>Dock</guilabel>.</para>
+                </listitem>
+                <listitem>
+                    <para>Enter &quot;&productshort;&quot; in the
+                        <guibutton>Search</guibutton>.</para>
+                    <para>The &productshort; program launcher icon will be displayed.</para>
+                </listitem>
+                <listitem>
+                    <para>Click the &productshort; program launcher to start the program.</para>
+                </listitem>
+            </orderedlist>
         </sect2>
         <sect2>
             <title>Command Line (CLI)</title>
@@ -37,47 +72,56 @@ subsurface [options] [logfile ...] [--import logfile ...]
                 </screen>
             <table>
                 <title>Command-line Options</title>
-                <tgroup cols="2">
+                <tgroup cols="3">
                     <thead>
                         <row>
-                            <entry>Command-line Option</entry>
+                            <entry>Abbrev</entry>
+                            <entry>Long</entry>
                             <entry>Description</entry>
                         </row>
                     </thead>
                     <tbody>
                         <row>
-                            <entry>-h --help</entry>
+                            <entry><option>-h</option></entry>
+                            <entry><option>--help</option></entry>
                             <entry>Print a summary of the command-line options</entry>
                         </row>
                         <row>
-                            <entry>--import logfile</entry>
+                            <entry><option>--import logfile</option></entry>
+                            <entry/>
                             <entry>A file name before this option is treated as an existing dive
                                 log, everything after is imported into the existing dive log</entry>
                         </row>
                         <row>
-                            <entry>-v --verbose</entry>
+                            <entry><option>-v</option></entry>
+                            <entry><option>--verbose</option></entry>
                             <entry>Print debug information while running</entry>
                         </row>
                         <row>
-                            <entry>-v -v</entry>
+                            <entry><option>-v -v</option></entry>
+                            <entry/>
                             <entry>Print even more debug information while running</entry>
                         </row>
                         <row>
-                            <entry>--version</entry>
+                            <entry><option>--version</option></entry>
+                            <entry/>
                             <entry>Prints the current version</entry>
                         </row>
                         <row>
-                            <entry>--survey</entry>
+                            <entry><option>--survey</option></entry>
+                            <entry/>
                             <entry>Opens the user survey immediately after starting</entry>
                         </row>
                         <row>
-                            <entry>--user=&lt;username&gt;</entry>
+                            <entry><option>--user=&lt;username&gt;</option></entry>
+                            <entry/>
                             <entry>Choose the configuration space of user &lt;username&gt; as
                                 described in <xref xlink:href="#starting-with-a-user-profile"
                                 />.</entry>
                         </row>
                         <row>
-                            <entry>--cloud-timeout=&lt;duration&gt;</entry>
+                            <entry><option>--cloud-timeout=&lt;duration&gt;</option></entry>
+                            <entry/>
                             <entry>Set the timeout for cloud connection (0 &lt; duration &lt; 60).
                                 This enables longer timeouts for slow Internet connections</entry>
                         </row>
@@ -91,56 +135,65 @@ subsurface [options] [logfile ...] [--import logfile ...]
                 desktop computer. For instance members of a household may use the same computer or
                 one family member may perform dive uploads for other family members/friends. There
                 are two approaches for doing this:</para>
-            <orderedlist numeration="loweralpha">
+            <itemizedlist>
                 <listitem>
-                    <para>If the different users of a desktop computer do not log onto the
-                        desktop/laptop under different user names then the simplest way is for each
-                        person to use her/his own divelog file within &productshort;.</para>
-                    <para>In this case John would work with the &productshort; file
-                        johns-divelogbook and Joan would use joans-divelogbook. The appropriate dive
-                        divelogbook can be selected by selecting <menuchoice>
-                            <guimenu>File</guimenu>
-                            <guimenuitem>Open logbook</guimenuitem>
-                        </menuchoice>.</para>
-
-                    <para>However, a problem arises if the users prefer different settings for
-                        &productshort;. For instance, one diver may prefer to see the dive ceiling
-                        in the Profile Panel and media icons in the Dive List, while the other may
-                        not have these preferences. In addition, the cloud connection is normally
-                        unique for each &productshort; installation and if more than one user wishes
-                        to save dive data on the cloud, it is inconvenient to open the Preferences
-                        and change the authentication details every time the cloud is
-                        accessed.</para>
-                    <para>To solve these problems, launch &productshort; with a
-                            <command>--user=&lt;user name&gt;</command> command-line option. John
-                        can then activate &productshort; with this command-line instruction:</para>
-                    <screen>
+                    <para><xref xlink:href="#starting-using-a-single-system-account"/></para>
+                </listitem>
+                <listitem>
+                    <para><xref xlink:href="#starting-using-seperate-system-accounts"/></para>
+                </listitem>
+            </itemizedlist>
+            <sect3 xml:id="starting-using-a-single-system-account"
+                xreflabel="Using a Single System User Account">
+                <title>Using a Single System User Account</title>
+                <para>If the different users of a desktop computer do not log onto the
+                    desktop/laptop under different user names then the simplest way is for each
+                    person to use her/his own divelog file within &productshort;.</para>
+                <para>In this case John would work with the &productshort; file johns-divelogbook
+                    and Joan would use joans-divelogbook. The appropriate dive divelogbook can be
+                    selected by selecting <menuchoice>
+                        <guimenu>File</guimenu>
+                        <guimenuitem>Open logbook</guimenuitem>
+                    </menuchoice>.</para>
+                <para>However, a problem arises if the users prefer different settings for
+                    &productshort;. For instance, one diver may prefer to see the dive ceiling in
+                    the Profile Panel and media icons in the Dive List, while the other may not have
+                    these preferences. In addition, the cloud connection is normally unique for each
+                    &productshort; installation and if more than one user wishes to save dive data
+                    on the cloud, it is inconvenient to open the Preferences and change the
+                    authentication details every time the cloud is accessed.</para>
+                <para>To solve these problems, launch &productshort; with a <command>--user=&lt;user
+                        name&gt;</command> command-line option. John can then activate
+                    &productshort; with this command-line instruction:</para>
+                <screen>
 subsurface --user=John
                     </screen>
-                    <para>while Joan can launch &productshort; using:</para>
-                    <screen>
+                <para>while Joan can launch &productshort; using:</para>
+                <screen>
 subsurface --user=Joan
                     </screen>
-                    <para>In this case, each user’s preferences, settings and cloud access
-                        information are stored separately, allowing each diver to interact with
-                        &productshort; in thier preferred way and with individual cloud access. The
-                        above process can be made user-friendly by creating a link/shortcut with a
-                        desktop icon that executes the above command-line instruction.</para>
-                    <para>Use of the <command>--user=</command> option therefore enables each user
-                        to create, maintain and backup a separate dive log within a personalised
-                        user interface. This way, when each diver launches &productshort;, it opens
-                        with the correct dive log as well as the appropriate display and backup
-                        preferences, and each diver can access their own divelog on a mobile device
-                        using &productmobile;.</para>
-                </listitem>
-                <listitem>
-                    <para>On the other hand, if the users log onto the same computer using different
-                        userIDs and passwords (i.e. users each have a separate user space),
-                        &productshort; is available independently to each user and every diver
-                        automatically has a separate user profile and settings, including unique
-                        cloud and &productmobile; access.</para>
-                </listitem>
-            </orderedlist>
+                <para>In this case, each user’s preferences, settings and cloud access information
+                    are stored separately, allowing each diver to interact with &productshort; in
+                    thier preferred way and with individual cloud access. The above process can be
+                    made user-friendly by creating a link/shortcut with a desktop icon that executes
+                    the above command-line instruction.</para>
+                <para>Use of the <command>--user=</command> option therefore enables each user to
+                    create, maintain and backup a separate dive log within a personalised user
+                    interface. This way, when each diver launches &productshort;, it opens with the
+                    correct dive log as well as the appropriate display and backup preferences, and
+                    each diver can access their own divelog on a mobile device using
+                    &productmobile;.</para>
+            </sect3>
+            <sect3 xml:id="starting-using-seperate-system-accounts"
+                xreflabel="Using Seperate System User Accounts">
+                <title>Using Seperate System User Accounts</title>
+                <para>On the other hand, if the users log onto the same computer using different
+                    userIDs and passwords (i.e. users each have a separate user space),
+                    &productshort; is available independently to each user and every diver
+                    automatically has a separate user profile and settings, including unique cloud
+                    and &productmobile; access.</para>
+            </sect3>
+
         </sect2>
     </sect1>
     <sect1 xml:id="desktop-main-workspace" xreflabel="Main Workspace">
@@ -663,55 +716,61 @@ subsurface --user=Joan
         </sect2>
         <sect2 xml:id="view-panels" xreflabel="View Panels">
             <title>View Panels</title>
+            <para>Within the main workspace there are four view panels. For purpose of clarity when
+                refering to these panels, the panels are named as follows:</para>
+            <itemizedlist>
+                <listitem>
+                    <para><xref xlink:href="#panel-dive-list"/> (bottom left)</para>
+                </listitem>
+                <listitem>
+                    <para><xref xlink:href="#panel-dive-map"/> (bottom right)</para>
+                </listitem>
+                <listitem>
+                    <para><xref xlink:href="#panel-dive-info"/> (top left)</para>
+                </listitem>
+                <listitem>
+                    <para><xref xlink:href="#panel-dive-profile"/> (top right)</para>
+                </listitem>
+            </itemizedlist>
+
+
             <para>The dividers between panels can be dragged to change the size of any of the
                 panels. &productshort; remembers the position of the dividers, so the next time
                 starts it uses the positions of the dividers from the last time the program was
                 used.</para>
 
-            <para>If a single dive is selected in the *Dive List*, the dive location, detailed
-                information and profile of the _selected dive_ are shown in the respective panels.
-                If several dives are selected, the last highlighted dive is the _selected dive_, but
-                summary data of all _highlighted dives_ is shown in the *Stats* tab of the *Info*
-                panel (maximum, minimum and average depths, durations, water temperatures and SAC;
-                total time and number of dives selected).</para>
-            <variablelist>
-                <varlistentry>
-                    <term>&paneldivelist; (bottom left)</term>
-                    <listitem>
-                        <para>Shows the dives in the user's dive log. Dives in the list can be
-                            selected by clicking on a record. The selected record is highlighted. In
-                            adding to selection by mouse click, the <keycap>UP</keycap> and
-                                <keycap>DOWN</keycap> keys on the keyboard can also be used to
-                            change selection. Multiple dive records can be selected by holding down
-                            the <keycap>CTRL</keycap> key and clicking additional records.</para>
-                    </listitem>
-                </varlistentry>
-                <varlistentry>
-                    <term>&paneldivemap;(bottom right)</term>
-                    <listitem>
-                        <para>Shows the dive site location of the record selected in the
-                            &paneldivelist;. The dive location is displayed centered on a world map
-                            and marked by a dive flag. The map scale can be increased or
-                            decreased.</para>
-                    </listitem>
-                </varlistentry>
-                <varlistentry>
-                    <term>&paneldiveinfo;(top left)</term>
-                    <listitem>
-                        <para>Shows more detailed information on the dive selected in the
-                            &paneldivelist;, including some statistics for the selected dive or for
-                            all highlighted dive(s).</para>
-                    </listitem>
-                </varlistentry>
-                <varlistentry>
-                    <term>&paneldiveprofile;(top right)</term>
-                    <listitem>
-                        <para>Shows a graphical dive profile of the selected dive in the
-                            &paneldivelist;. You can zoom into the dive profile for a more detailed
-                            view.</para>
-                    </listitem>
-                </varlistentry>
-            </variablelist>
+            <para>If a single dive is selected in the &paneldivelist; panel, the dive location,
+                detailed information and profile of the selected dive are shown in the respective
+                panels. If several dives are selected, the last highlighted dive is the selected
+                dive, but summary data of all highlighted dives is shown in the Stats tab of the
+                &paneldiveinfo; panel (maximum, minimum and average depths, durations, water
+                temperatures and SAC; total time and number of dives selected).</para>
+
+            <sect3 xml:id="panel-dive-list">
+                <title>&paneldivelist;</title>
+                <para>The &paneldivelist; panel lists the dives in the logbook. Each dive log is a
+                    record in the &paneldivelist;. Dive logs can selected using the mouse pointer
+                    and clicking a record or using the <keycap>UP</keycap> and <keycap>DOWN</keycap>
+                    keys on the keyboard.</para>
+
+            </sect3>
+            <sect3 xml:id="panel-dive-map">
+                <title>&paneldivemap;</title>
+                <para>Shows the dive site location of the record selected in the &paneldivelist;.
+                    The dive location is displayed centered on a world map and marked by a dive
+                    flag. The map scale can be increased or decreased.</para>
+            </sect3>
+            <sect3 xml:id="panel-dive-info">
+                <title>&paneldiveinfo;</title>
+                <para>Shows more detailed information on the dive selected in the &paneldivelist;,
+                    including some statistics for the selected dive or for all highlighted
+                    dive(s).</para>
+            </sect3>
+            <sect3 xml:id="panel-dive-profile">
+                <title>&paneldiveprofile;</title>
+                <para>Shows a graphical dive profile of the selected dive in the &paneldivelist;.
+                    You can zoom into the dive profile for a more detailed view.</para>
+            </sect3>
         </sect2>
     </sect1>
     <sect1 xml:id="setting-preferences" xreflabel="Setting Preferences">

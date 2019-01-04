@@ -8,8 +8,8 @@
 <book xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <xi:include href="preface.xml"/>
-    <xi:include href="chapter-introduction.xml"/>
-    
+    <xi:include href="chapter-overview.xml"/>
+    <xi:include href="chapter-getting-started.xml"/>
     <xi:include href="chapter-managing-logbooks.xml"/>
     <xi:include href="chapter-managing-dive-logs.xml"/>
     <xi:include href="chapter-planning-dives.xml"/>

@@ -5,9 +5,9 @@
 <!ENTITY % myent SYSTEM "subsurface-divelog.ent">
 %myent;
 ]>
-<chapter xml:id="introduction" xreflabel="Introduction" xmlns="http://docbook.org/ns/docbook"
+<chapter xml:id="chapter-overview" xreflabel="overview" xmlns="http://docbook.org/ns/docbook"
     xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
-    <title>Introduction</title>
+    <title>Overview</title>
     <para>&productshort; can plan and track single and multi-tank dives using Air, Nitrox or TriMix.
         &productshort; allows tracking of dive locations including GPS coordinates (which can also
         conveniently be entered using a map interface), logging of equipment used and names of other
@@ -32,8 +32,8 @@
         community.</para>
     <sect1>
         <title>Product Variants</title>
-        <para>&product; software is available as a desktop, mobile and web application variants.
-            Each of these has been named as follows:</para>
+        <para>&product; software is available as desktop, mobile and web application variants. Each
+            of these has been named as follows:</para>
         <variablelist>
             <varlistentry>
                 <term>&productdesktop;</term>
@@ -57,7 +57,7 @@
             </varlistentry>
         </variablelist>
         <para>Each variant of the software is not only designed to run on a different target
-            hardware and environment, but also consistant of slight differences in
+            hardware and environments, but also consistant of slight differences in
             functionality.</para>
         <sect2>
             <title>&productdesktop;</title>
@@ -74,12 +74,12 @@
                 be downloaded and installed on a smart phone device and is partially featured. It
                 serves as a more limited mobile version of &product; aimed at Android and iOS
                 smartphone and tablet devices, allowing viewing, entering, sharing, and storage of
-                dive information at dive sites where a larger computer is not useful. While the
-                desktop version of &product; shows much more detailed information for each dive,
-                &productmobile; allows a more accessible dive log on a dive trip, useful for proving
-                dive experience to dive shops or to review previous dives. &productmobile; also
-                allows the gathering of GPS locations where dives are performed using the GPS modem
-                that is an integral part of most mobile devices.</para>
+                dive information at dive sites where a larger computer is not useful.</para>
+            <para>While the desktop version of &product; shows much more detailed information for
+                each dive, &productmobile; allows dive logs to be more accessible on a dive trip, where it is useful
+                for providing proof of dive experience to dive shops or to review dives.
+                &productmobile; also allows the gathering of GPS locations where dives are performed
+                using the GPS modem that is an integral part of most mobile devices.</para>
             <para>Users of &productmobile; typically use the mobile app as a companion to the
                 desktop version, sharing dive information between the mobile and the desktop
                 versions via the &productcloud; service. However, &productmobile; can also be used
@@ -95,7 +95,7 @@
         </sect2>
         <sect2>
             <title>&productcloud;</title>
-            <para>&productcloud; is the name given to the &product; cloud service. It is not
+            <para>&productcloud; is the name given to the &product; web-application and cloud service. It is not
                 possible to download or install &productcloud; because it is a web service that may
                 be utilised by &product; and &productmobile; to backup, store and exchange divelogs
                 between &product; and &productmobile;. It is accessible by a web browser. The

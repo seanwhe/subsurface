@@ -5,10 +5,11 @@
 <!ENTITY % myent SYSTEM "subsurface-divelog.ent">
 %myent;
 ]>
-<chapter xml:id="chapter-managing-dive-logs" xreflabel="Managing Dive Logs" xmlns="http://docbook.org/ns/docbook"
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<chapter xml:id="chapter-managing-dive-logs" xreflabel="Managing Dive Logs"
+    xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
     <title>Managing Dive Logs</title>
-    <para>&product; supports the following methods of adding dive data to a logbook. Dive logs can be:</para>
+    <para>&product; supports the following methods of adding dive data to a logbook. Dive logs can
+        be:</para>
     <variablelist>
         <varlistentry>
             <term>Created manually</term>
@@ -23,19 +24,23 @@
                     <varlistentry>
                         <term>Spreadsheets or CSV Files</term>
                         <listitem>
-                            <para>Dives recorded using spreadsheet programs can be exported to CSV file format. Provided that each record in the spreadsheet represents a single dive, it may be possible to import the dive logs assuming the delimetered fields can be mapped.</para>
+                            <para>Dives recorded using spreadsheet programs can be exported to CSV
+                                file format. Provided that each record in the spreadsheet represents
+                                a single dive, it may be possible to import the dive logs assuming
+                                the delimetered fields can be mapped.</para>
                         </listitem>
                     </varlistentry>
                     <varlistentry>
                         <term>Dive Computers</term>
                         <listitem>
-                            <para></para>
+                            <para/>
                         </listitem>
                     </varlistentry>
                     <varlistentry>
-                        <term></term>
+                        <term>Third Party Software</term>
                         <listitem>
-                            <para>Proprietary software distributed by dive computer manufacturers</para>
+                            <para>Proprietary software distributed by dive computer
+                                manufacturers</para>
                         </listitem>
                     </varlistentry>
                 </variablelist>
@@ -44,7 +49,84 @@
     </variablelist>
     <sect1>
         <title>Manually Creating Dive Logs</title>
+        <para>This approach works well for dives done with without a dive computer. The basic record
+            of information within &productshort; is a dive. While &productshort; can store much more
+            information for each dive, the most important information in a simple dive logbook
+            usually includes:</para>
+        <itemizedlist>
+            <listitem>
+                <para>dive type</para>
+            </listitem>
+            <listitem>
+                <para>date</para>
+            </listitem>
+            <listitem>
+                <para>time</para>
+            </listitem>
+            <listitem>
+                <para>duration</para>
+            </listitem>
+            <listitem>
+                <para>depth</para>
+            </listitem>
+            <listitem>
+                <para>name of your dive buddy</para>
+            </listitem>
+            <listitem>
+                <para>name of the divemaster or dive guide</para>
+            </listitem>
+            <listitem>
+                <para>remarks about the dive</para>
+            </listitem>
+        </itemizedlist>
+        <para>There are two main tasks to perform when manually creating divelogs:</para>
+        <orderedlist>
+            <listitem>
+                <para><xref xlink:href="#edit-the-dive-profile"/></para>
+            </listitem>
+            <listitem>
+                <para><xref xlink:href="#edit-the-dive-profile"/></para>
+            </listitem>
+        </orderedlist>
         
+        <sect2 xml:id="enter-dive-information" xreflabel="Enter Dive Information">
+            <title>Enter Dive Information</title>
+            <para>Entering dive information is as simple as completing the fields on the the
+                &paneldiveinfo; panel <guilabel>Notes</guilabel> and <guilabel>Equipment</guilabel>
+                tabs.</para>
+
+            <orderedlist>
+                <title>To add a new dive to a logbook:</title>
+                <listitem>
+                    <para>Open the logbook you want to add the dive to.</para>
+                </listitem>
+                <listitem>
+                    <para>Select <menuchoice>
+                            <guimenu>Log</guimenu>
+                            <guimenuitem>Add dive</guimenuitem>
+                        </menuchoice> from the <guilabel>Main Menu</guilabel>.</para>
+                    <para>A new dive is started and is in edit mode.</para>
+                </listitem>
+                <listitem>
+                    <para>In the &paneldiveinfo; panel complete the fields in the
+                            <guilabel>Notes</guilabel> tab.</para>
+                </listitem>
+                <listitem>
+                    <para>In the &paneldiveinfo; panel complete the fields in the
+                            <guilabel>Equipment</guilabel> tab.</para>
+                </listitem>
+                <listitem>
+                    <para>Click the <guibutton>Apply changes</guibutton> button to update the dive
+                        information in memory.</para>
+                </listitem>
+            </orderedlist>
+
+        </sect2>
+        <sect2 xml:id="edit-the-dive-profile" xreflabel="Edit the Dive Profile">
+            <title>Edit the Dive Profile</title>
+
+        </sect2>
+
     </sect1>
     <sect1>
         <title>Importing Dive Logs</title>
@@ -59,10 +141,52 @@
         </sect2>
     </sect1>
     <sect1>
-        <title>Organising Dive Logs</title>
+        <title>Viewing Dive Logs</title>
+        <para>The &paneldivelist; panel lists the dive logs in an open logbook. Each dive log is a
+            record in the &paneldivelist;. Dive logs can selected using the mouse pointer
+            and clicking a record or using the <keycap>UP</keycap> and <keycap>DOWN</keycap>
+            keys on the keyboard.</para>
+        
         <sect2>
-            <title>Renumbering Dives</title>
+            <title>Selecting Multiple Dive Logs</title>
+            <para>It is possible to select multiple records, consecutively and
+                non-consecutively, using the mouse or keyboard.</para>
+        <orderedlist>
+            <title>Selecting multiple consecutive records using the mouse:</title>
+            <listitem>
+                <para>Point and click a record.</para>
+                <para>The record will be highlighted showing it is selected.</para>
+            </listitem>
+            <listitem>
+                <para>Hold down the <keycap>Shift</keycap> key on the keyboard.</para>
+            </listitem>
+            <listitem>
+                <para>Point and click a record above or below the currently selected
+                    record.</para>
+                <para>The records between and including the clicked records will be
+                    highlighted showing they are selected.</para>
+            </listitem>
+        </orderedlist>
+        <orderedlist>
+            <title>Selecting multiple non-consecutive records using the mouse:</title>
+            <listitem>
+                <para>Point and click a record.</para>
+                <para>The record will be highlighted showing it is selected.</para>
+            </listitem>
+            <listitem>
+                <para>Hold down the <keycap>CTRL</keycap> key on the keyboard.</para>
+            </listitem>
+            <listitem>
+                <para>Point and click a record above or below the currently selected
+                    record.</para>
+                <para>Only the records you click on will be highlighted showing they are
+                    selected.</para>
+            </listitem>
+        </orderedlist>
+        
+        
         </sect2>
+        
         <sect2>
             <title>Auto Grouping Dives</title>
         </sect2>
@@ -78,7 +202,9 @@
                 <title>Removing Dives from a Dive Trip</title>
             </sect3>
         </sect2>
-        
+        <sect2>
+            <title>Renumbering Dives</title>
+        </sect2>
     </sect1>
     <sect1>
         <title>Editing Dive Logs</title>

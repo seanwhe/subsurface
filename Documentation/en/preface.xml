@@ -5,8 +5,8 @@
 <!ENTITY % myent SYSTEM "subsurface-divelog.ent">
 %myent;
 ]>
-<preface xmlns="http://docbook.org/ns/docbook" 
-    xmlns:xlink="http://www.w3.org/1999/xlink" version="5.1">
+<preface xmlns="http://docbook.org/ns/docbook" xmlns:xlink="http://www.w3.org/1999/xlink"
+    version="5.1">
     <info>
         <title>&product;</title>
         <subtitle>User Manual</subtitle>
@@ -14,45 +14,47 @@
         <pubdate>September 2018</pubdate>
         <abstract>
             <title>About &product;</title>
-            <para>&product; is an open source divelog program for recreational, technical and
-                free divers that runs on Windows, Mac, Linux, Android and IOS.</para>
+            <para>&product; is an open source divelog program for recreational, technical and free
+                divers that runs on Windows, Mac, Linux, Android and IOS.</para>
             <para>&product; enables the download or import of dive logs from a variety of dive
-                computers, dive log programs and dive log websites. &product; also supports
-                import using files formatted using comma-separated values
-                (<acronym>CSV</acronym>) and the ability to manually create and save dive
-                logs directly.</para>
-            <para>&product; provides a visual dive planner module that makes dive planning easy
-                and intuitive using a choice of Bühlmann ZH16 or Varying Permeability Model
-                (<acronym>VPM-B</acronym>) decompression algorithms.</para>
-            <para>&product; offers both local and cloud storage options. Using the &product;
-                cloud storage option, makes it it possible for you to access your dive log data
-                from different computers and mobile devices in both online and offline
-                modes.</para>
+                computers, dive log programs and dive log websites. &product; also supports import
+                using files formatted using comma-separated values (<acronym>CSV</acronym>) and the
+                ability to manually create and save dive logs directly.</para>
+            <para>&product; provides a visual dive planner module that makes dive planning easy and
+                intuitive using a choice of Bühlmann ZH16 or Varying Permeability Model
+                    (<acronym>VPM-B</acronym>) decompression algorithms.</para>
+            <para>&product; offers both local and cloud storage options. Using the &product; cloud
+                storage option, makes it it possible for you to access your dive log data from
+                different computers and mobile devices in both online and offline modes.</para>
+
         </abstract>
+
         <abstract>
             <title>A Bit of History</title>
             <para>In fall of 2011, when a forced lull in kernel development gave him a chance to
-                start a new project, Linux creator Linus Torvalds decided to tackle his
-                frustration with the lack of decent divelog software on Linux.</para>
+                start a new project, Linux creator Linus Torvalds decided to tackle his frustration
+                with the lack of decent divelog software on Linux.</para>
             <para>Linus worked with a team of developers, and &product; is the result. It now
-                supports Linux, Windows and MacOS and allows data import from many dive
-                computers and several existing divelog programs.</para>
-            <para>&product; provides a quick and easy way to see the key information provided by
-                a modern dive computer and lets users track a wide variety of data about their
-                dives. In fall of 2012 Dirk Hohndel took over as Subsurface maintainer.</para>
+                supports Linux, Windows and MacOS and allows data import from many dive computers
+                and several existing divelog programs.</para>
+            <para>&product; provides a quick and easy way to see the key information provided by a
+                modern dive computer and lets users track a wide variety of data about their dives.
+                In fall of 2012 Dirk Hohndel took over as Subsurface maintainer.</para>
         </abstract>
+
         <legalnotice>
             <title>Software License</title>
             <para>&product; software is released under the <link
-                xlink:href="https://www.gnu.org/licenses/gpl-2.0.en.html">GNU GENERAL PUBLIC
-                LICENSE</link>.</para>
+                    xlink:href="https://www.gnu.org/licenses/gpl-2.0.en.html">GNU GENERAL PUBLIC
+                    LICENSE</link>.</para>
         </legalnotice>
         <legalnotice>
             <title>Documentation License</title>
             <para>&product; documetation is released under <link
-                xlink:href="https://tdg.docbook.org/tdg/5.0/gfdl.html">GNU Free
-                Documentation License</link>.</para>
+                    xlink:href="https://tdg.docbook.org/tdg/5.0/gfdl.html">GNU FREE DOCUMENTATION
+                    LICENSE</link>.</para>
         </legalnotice>
+
         <authorgroup>
             <author>
                 <personname>Jacco van Koll</personname>
@@ -99,37 +101,176 @@
         <title>Using this Manual</title>
         <sect2>
             <title>Conventions used in this Manual</title>
-            <para>The following typographical conventions are used in this manual:</para>
-            <note>
-                <para>This is a note on something.</para>
-            </note>
-            <important>
-                <para>This is an important piece of information about something.</para>
-            </important>
-            <warning>
-                <para>This is a warning of something to either be cautious or avoid.</para>
-            </warning>
+            <para>The following typographical conventions are used in this manual.</para>
+            <sect3>
+                <title>Typographic Conventions</title>
+                <variablelist>
+                    <varlistentry>
+                        <term>Menu choices</term>
+                        <listitem>
+                            <para>Select <menuchoice>
+                                    <guimenu>File</guimenu>
+                                    <guimenuitem>New</guimenuitem>
+                                </menuchoice></para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>Keyboard Key Combinations</term>
+                        <listitem>
+                            <para>Press <keycombo>
+                                    <keycap>Ctrl</keycap>
+                                    <keycap>N</keycap>
+                                </keycombo></para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>Mouse Actions</term>
+                        <listitem>
+                            <para>Click the <mousebutton>Left</mousebutton> button
+                                    (<mousebutton>Left</mousebutton> click). </para>
+                            <para>Click the <mousebutton>Right</mousebutton> button
+                                    (<mousebutton>Right</mousebutton> click).</para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>Commands</term>
+                        <listitem>
+                            <para><command>ls</command>
+                                <option>-lash</option></para>
+                        </listitem>
+                    </varlistentry>
+                    <varlistentry>
+                        <term>Screen Outputs</term>
+                        <listitem>
+                            <screen>                        
+total 80K
+4.0K drwxrwxr-x  6 sean sean 4.0K Jan  3 18:12 .
+4.0K drwxr-xr-x 51 sean sean 4.0K Jan  3 15:35 ..
+4.0K drwxrwxr-x  3 sean sean 4.0K Jan  3 18:13 cloudstorage
+40K drwxrwxr-x  2 sean sean  36K Jan  3 20:24 googlemaps
+4.0K -rw-rw-r--  1 sean sean   16 Jan  3 18:12 hashes
+4.0K drwxrwxr-x  3 sean sean 4.0K Jan  3 18:13 printing_templates
+4.0K -rw-rw-r--  1 sean sean  119 Dec 31 12:50 testing.xml
+4.0K drwxrwxr-x  2 sean sean 4.0K Dec 24 13:55 thumbnails                                    
+                       </screen>
+                        </listitem>
+                    </varlistentry>
+                </variablelist>
+            </sect3>
+            <sect3>
+                <title>Notes, Tips, Important Information, Warnings, and Examples</title>
+
+                <tip>
+                    <para>Tips are represented like this, and contain information helpful to the
+                        user, like showing an easier way to do something.</para>
+                </tip>
+                <note>
+                    <para>Notes are represented like this, and contain information to take note of,
+                        as it may affect what the user does.</para>
+                </note>
+                <important>
+                    <para>Important information is represented like this. Typically, these show
+                        extra steps the user may need to take.</para>
+                </important>
+                <warning>
+                    <para>Warnings are represented like this, and contain information warning about
+                        possible damage if the instructions are not followed. This damage may be
+                        physical, to the hardware or the user, or it may be non-physical, such as
+                        the inadvertent deletion of important files.</para>
+                </warning>
+                <example>
+                    <title>A Sample Example</title>
+                    <para>Examples are represented like this, and typically contain examples showing
+                        a walkthrough, or the results of a particular action.</para>
+                </example>
+            </sect3>
         </sect2>
         <sect2>
-            <title>Versions of this Manual</title>
-            <para>&product; renders differently on the various <xref
-                xlink:href="#supported-target-devices"/>. To cater for this and make the
-                documentation easier to read and reference; the documentation has been profiled
-                according to the different versions of the software and thier target platforms.
-                This has resulted in the following versions of this manual, each tailored to a
-                specific manual:</para>
+            <title>Organization of This Manual</title>
+            <para>The general organisation of this manual has been structured as follows:</para>
+            <variablelist>
+                <varlistentry>
+                    <term>Table of Contents</term>
+                    <listitem>
+                        <para>The full table of contents of the manual listing all chapters,
+                            sections and appendices.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Table of Tables</term>
+                    <listitem>
+                        <para>A listing of all tables throughout the document.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Table of Examples</term>
+                    <listitem>
+                        <para>A listing of all examples throughout the document.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Preface</term>
+                    <listitem>
+                        <para>The introduction to the manual, stating the subject, scope, aims,
+                            authors, acknowledgements, licenses.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Overview</term>
+                    <listitem>
+                        <para>Provides a general overview of the product and the differences between
+                            various editions.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Getting Started</term>
+                    <listitem>
+                        <para>Explains the initial steps to get up and running with the
+                            product.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Managing Logbooks</term>
+                    <listitem>
+                        <para>Explains how to use &productshort; user interface when working with
+                            logbooks.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Managing Dive Logs</term>
+                    <listitem>
+                        <para>Explains how to use &productshort; user interface when working with
+                            logbooks.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Planning Dives</term>
+                    <listitem>
+                        <para>Explains how to use &productshort; user interface when planing
+                            dives.</para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Appendixes</term>
+                    <listitem>
+                        <para>A collection of subsidiary matter that is suplimental to the chapters
+                            of the manual.</para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
         </sect2>
     </sect1>
+
     <sect1 xml:id="getting-help" xreflabel="Getting Help">
         <title>Getting Help</title>
         <sect2 xml:id="the-user-forum" xreflabel="The User Forum">
             <title>The User Forum</title>
-            <para>The <link xlink:href="http://subsurface-divelog.org/user-forum/">User
-                Forum</link> is a pulically accessible Google Group where anyone can ask
-                questions, post comments or make suggestions. You can access the <link
-                    xlink:href="http://subsurface-divelog.org/user-forum/">User Forum</link>
-                using a web browser, or you can subscribe to it via email; simply check the
-                corresponding box when joining the forum. </para>
+            <para>The <link xlink:href="http://subsurface-divelog.org/user-forum/">User Forum</link>
+                is a pulically accessible Google Group where anyone can ask questions, post comments
+                or make suggestions. You can access the <link
+                    xlink:href="http://subsurface-divelog.org/user-forum/">User Forum</link> using a
+                web browser, or you can subscribe to it via email; simply check the corresponding
+                box when joining the forum. </para>
             <note>
                 <para>The preferred language is English, but we will make an effort to answer
                     questions in other languages as well (not everyone is comfortable posting in
@@ -139,40 +280,37 @@
         <sect2 xml:id="mailing-list" xreflabel="Mailing List">
             <title>The Mailing List</title>
             <para>The <link
-                xlink:href="http://lists.subsurface-divelog.org/cgi-bin/mailman/listinfo/subsurface"
-                >Mailing List</link> is for developers and users of &product;. If you intend
-                <xref xlink:href="#contributing-to-the-project"/> it is a good idea to join
-                the mailing list.</para>
+                    xlink:href="http://lists.subsurface-divelog.org/cgi-bin/mailman/listinfo/subsurface"
+                    >Mailing List</link> is for developers and users of &product;. If you intend
+                    <xref xlink:href="#contributing-to-the-project"/> it is a good idea to join the
+                mailing list.</para>
             <note>
                 <para>Conversation there is in English -- even though this site (and &product;
-                    itself) are available in many languages, the shared language we all
-                    communicate in is English. Actually &quot;Broken English&quot; is just fine…
-                    :-)</para>
+                    itself) are available in many languages, the shared language we all communicate
+                    in is English. Actually &quot;Broken English&quot; is just fine… :-)</para>
             </note>
         </sect2>
         <sect2>
             <title>IRC Freenode</title>
             <para>There are developers and users hanging out in the #subsurface channel on <link
-                xlink:href="http://freenode.net/">freenode.net</link>.</para>
+                    xlink:href="http://freenode.net/">freenode.net</link>.</para>
             <para>While there is a <application>freenode webchat</application>, use of an
-                <application>IRC Client</application> application is recomended.</para>
-            <para>The #subsurface channel requires that users have a registered nickname in
-                order to join. Please see the <link
-                    xlink:href="https://freenode.net/kb/answer/registration">freenode Nick
-                    Registration</link> page for details.</para>
+                    <application>IRC Client</application> application is recomended.</para>
+            <para>The #subsurface channel requires that users have a registered nickname in order to
+                join. Please see the <link xlink:href="https://freenode.net/kb/answer/registration"
+                    >freenode Nick Registration</link> page for details.</para>
             <note>
                 <para>While people may be always logged in to the freenode channel, they but not
-                    always around - please be patient and stay around when asking questions - or
-                    try <xref xlink:href="#the-user-forum"/>.</para>
+                    always around - please be patient and stay around when asking questions - or try
+                        <xref xlink:href="#the-user-forum"/>.</para>
             </note>
         </sect2>
     </sect1>
     <sect1 xml:id="contributing-to-the-project" xreflabel="Contributing to the Project">
         <title>Contributing to the Project</title>
-        <para>As an open source project, &product; always needs and welcomes contributions from
-            the wider community. There are many opportunities for community contributions, for
-            more information on the opportunities for contribution we highly recomend reading
-            the <xref xlink:href="#appendix-contribution-guidelines"/>.</para>
+        <para>As an open source project, &product; always needs and welcomes contributions from the
+            wider community. There are many opportunities for community contributions, for more
+            information on the opportunities for contribution we highly recomend reading the <xref
+                xlink:href="#appendix-contribution-guidelines"/>.</para>
     </sect1>
 </preface>
-
