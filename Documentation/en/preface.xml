@@ -190,32 +190,6 @@ total 80K
             <para>The general organisation of this manual has been structured as follows:</para>
             <variablelist>
                 <varlistentry>
-                    <term>Table of Contents</term>
-                    <listitem>
-                        <para>The full table of contents of the manual listing all chapters,
-                            sections and appendices.</para>
-                    </listitem>
-                </varlistentry>
-                <varlistentry>
-                    <term>Table of Tables</term>
-                    <listitem>
-                        <para>A listing of all tables throughout the document.</para>
-                    </listitem>
-                </varlistentry>
-                <varlistentry>
-                    <term>Table of Examples</term>
-                    <listitem>
-                        <para>A listing of all examples throughout the document.</para>
-                    </listitem>
-                </varlistentry>
-                <varlistentry>
-                    <term>Preface</term>
-                    <listitem>
-                        <para>The introduction to the manual, stating the subject, scope, aims,
-                            authors, acknowledgements, licenses.</para>
-                    </listitem>
-                </varlistentry>
-                <varlistentry>
                     <term>Overview</term>
                     <listitem>
                         <para>Provides a general overview of the product and the differences between
